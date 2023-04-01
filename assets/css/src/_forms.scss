@@ -1,0 +1,39 @@
+.button,
+button,
+input[type="submit"] {
+	background-color: $color_gary_dark;
+	border: 2px solid $color_gary_dark;
+	color: #fff;
+	display: inline-block;
+	padding: .53em 1.7em;
+	font-weight: 700;
+	text-transform: uppercase;
+	text-decoration: none;
+
+	&:active,
+	&:focus,
+	&:hover {
+		background-color: lighten( $color_gary_dark, 10% );
+		border-color: lighten( $color_gary_dark, 10% );
+		cursor: pointer;
+	}
+}
+
+input[type="text"],
+input[type="email"],
+input[type="url"],
+input[type="text"],
+input[type="search"],
+input[type="password"],
+textarea,
+select {
+	border: 2px solid $color_gary_dark;
+	box-sizing: border-box;
+	padding: .53em;
+	width: 100%;
+
+	&:active,
+	&:focus {
+		border-color: $color_primary;
+	}
+}

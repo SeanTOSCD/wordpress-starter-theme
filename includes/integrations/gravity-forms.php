@@ -1,0 +1,4 @@
+<?php
+/**
+ * Gravity Forms functions
+ */

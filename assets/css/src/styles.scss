@@ -1,0 +1,32 @@
+/*!
+Theme Name: WST
+Author: Sean Davis
+Description: WordPress Starter Theme
+Version: 1.0.0
+License: GNU General Public License v2 or later
+License URI: LICENSE
+*/
+
+/* Required Bootstrap styles */
+//@import "../../../node_modules/bootstrap/scss/functions";
+//@import "../../../node_modules/bootstrap/scss/variables";
+@import "../../../node_modules/bootstrap/scss/bootstrap-reboot";
+@import "../../../node_modules/bootstrap/scss/bootstrap-utilities";
+@import "../../../node_modules/bootstrap/scss/bootstrap-grid";
+
+@import "_mixins";
+@import "_colors";
+
+@import "_archive";
+@import "_comments";
+@import "_footer";
+@import "_forms";
+@import "_grid";
+@import "_header";
+@import "_navigation";
+@import "_markup-formatting";
+@import "_sections";
+@import "_sidebar";
+@import "_singular";
+@import "_structure";
+@import "_typography";

@@ -1,0 +1,160 @@
+.post-comments {
+	font-size: 17px;
+	margin-top: 3rem;
+
+	#reply-title,
+	.comments-title {
+		display: block;
+		font-size: 1.25rem;
+		font-weight: 700;
+		margin-bottom: 1.5rem;
+	}
+
+	.comments-title {
+		font-size: 1.5rem;
+	}
+
+	.logged-in-as,
+	.comment-notes {
+		color: $body_light;
+		font-size: 14px;
+		font-weight: 500;
+
+		a {
+			color: $link_subdued;
+		}
+	}
+
+	.comment-list {
+
+		& > .comment,
+		& > .pingback {
+			margin-bottom: 2.5rem;
+		}
+
+		.comment,
+		.pingback {
+
+			.comment-meta {
+				font-size: 14px;
+				font-weight: 500;
+				margin-bottom: 1rem;
+
+				.comment-author {
+
+					.fn {
+						font-size: 20px;
+					}
+				}
+
+				a {
+					color: $body;
+				}
+			}
+
+			.comment-content {
+
+				&:not(:last-child) {
+					margin-bottom: 1rem;
+				}
+
+				pre {
+					background-color: #fff;
+				}
+			}
+
+			.reply {
+
+				a {
+					color: $link_subdued;
+					font-size: 13px;
+					font-weight: 700;
+				}
+			}
+		}
+
+		.comment {
+
+			.comment {
+				border-left: 1px solid rgba(0,0,0,.1);
+				margin: 2.5rem 0 0;
+				padding-left: 1.5rem;
+			}
+		}
+
+		.pingback {
+			font-weight: 500;
+			margin-bottom: .5rem;
+
+			.comment-body {
+				font-size: 15px;
+
+				a {
+					color: $link_subdued;
+				}
+			}
+
+			& + .comment {
+				margin-top: 2rem;
+			}
+		}
+
+		& + #respond {
+			margin-top: 3rem;
+		}
+	}
+
+	.no-comments {
+		background: $color_gray;
+		font-weight: 500;
+		margin-top: 2rem;
+		padding: 1rem;
+		text-align: center;
+	}
+
+	#commentform {
+
+		& > p {
+
+			&[class*="-author"],
+			&[class*="-email"],
+			&[class*="-url"] {
+
+				label {
+					font-size: 15px;
+				}
+			}
+		}
+	}
+
+	.comment-form-cookies-consent {
+
+		label {
+			font-size: 15px;
+			font-weight: 500;
+			margin-left: 6px;
+		}
+	}
+
+	#respond {
+
+		&:not(:first-child) {
+			padding-top: 2rem;
+		}
+
+		#comment {
+			width: 100%;
+		}
+
+		#cancel-comment-reply-link {
+			color: $link_subdued;
+			display: inline-block;
+			font-size: 15px;
+			margin-left: 10px;
+		}
+
+		.form-submit {
+			margin-bottom: 0;
+		}
+	}
+}

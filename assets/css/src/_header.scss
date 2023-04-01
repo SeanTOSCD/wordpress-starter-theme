@@ -1,0 +1,21 @@
+#masthead {
+
+	.site-header-row {
+		align-items: center;
+
+		.site-title {
+			font-weight: 700;
+
+			a {
+				color: $body;
+				text-decoration: none;
+
+				&:hover,
+				&:focus,
+				&:active {
+					color: $color_primary;
+				}
+			}
+		}
+	}
+}

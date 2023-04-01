@@ -1,0 +1,23 @@
+<?php
+/**
+ * The template for displaying 404 pages (not found)
+ */
+
+get_header();
+
+get_template_part( 'template-parts/section', 'page-header', array(
+	'title' => '404, unfortunately.',
+	'description' => 'It looks like nothing was found at this location. Try searching.',
+) );
+?>
+
+	<main id="content" class="site-main">
+        <div class="inner medium">
+            <div class="container">
+	            <?php get_search_form(); ?>
+            </div>
+        </div>
+	</main>
+
+<?php
+get_footer();

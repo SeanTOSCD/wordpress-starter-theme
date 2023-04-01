@@ -1,0 +1,14 @@
+$color_primary: blue;
+$color_gray: #f5f5f5;
+$color_gary_dark: #444;
+
+$background: #fff;
+
+$body: $color_gary_dark;
+$body_light: lighten( $body, 15% );
+
+$link_subdued: lighten( $body, 5% );
+
+.background-gray {
+	background-color: $color_gray;
+}

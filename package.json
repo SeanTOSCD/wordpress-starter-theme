@@ -1,0 +1,17 @@
+{
+  "name": "WST",
+  "version": "1.0.0",
+  "description": "WordPress Starter Theme",
+  "author": "Sean Davis",
+  "license": "ISC",
+  "devDependencies": {
+    "grunt": "^1.5.3"
+  },
+  "dependencies": {
+    "bootstrap": "^5.2.1",
+    "grunt-contrib-concat": "^2.1.0",
+    "grunt-contrib-sass": "^2.0.0",
+    "grunt-contrib-uglify": "^5.2.2",
+    "grunt-contrib-watch": "^1.1.0"
+  }
+}

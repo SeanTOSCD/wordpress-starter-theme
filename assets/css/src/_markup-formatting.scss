@@ -1,0 +1,273 @@
+h1, .h1,
+h2, .h2,
+h3, .h3,
+h4, .h4,
+h5, .h5,
+h6, .h6,
+.page-title,
+.section-title,
+.archive .page-title span {
+	display: block;
+	font-weight: 700;
+	line-height: 1.4;
+	margin: 0 0 1.25rem;
+}
+
+h1, .h1,
+.page-title,
+.section-title,
+.archive .page-title span {
+	font-size: 2rem;
+
+	@media all and (min-width: 576px) {
+		font-size: 2.5rem;
+	}
+
+	@media all and (min-width: 768px) {
+		font-size: 3rem;
+	}
+
+	@media all and (min-width: 992px) {
+		font-size: 3.5rem;
+	}
+
+	@media all and (min-width: 1200px) {
+		font-size: 4rem;
+	}
+}
+
+h2, .h2 {
+	font-size: 1.75rem;
+
+	@media all and (min-width: 576px) {
+		font-size: 2rem;
+	}
+
+	@media all and (min-width: 768px) {
+		font-size: 2.5rem;
+	}
+
+	@media all and (min-width: 992px) {
+		font-size: 3rem;
+	}
+
+	@media all and (min-width: 1200px) {
+		font-size: 3.5rem;
+	}
+}
+
+h3, .h3 {
+	font-size: 1.5rem;
+
+	@media all and (min-width: 576px) {
+		font-size: 1.75rem;
+	}
+
+	@media all and (min-width: 768px) {
+		font-size: 2rem;
+	}
+
+	@media all and (min-width: 992px) {
+		font-size: 2.25rem;
+	}
+
+	@media all and (min-width: 1200px) {
+		font-size: 2.5rem;
+	}
+}
+
+h4, .h4 {
+	font-size: 1.25rem;
+
+	@media all and (min-width: 576px) {
+		font-size: 1.5rem;
+	}
+
+	@media all and (min-width: 768px) {
+		font-size: 1.75rem;
+	}
+
+	@media all and (min-width: 992px) {
+		font-size: 2rem;
+	}
+
+	@media all and (min-width: 1200px) {
+		font-size: 2.25rem;
+	}
+}
+
+h5, .h5,
+h6, .h6 {
+	font-size: 1.25rem;
+}
+
+p {
+	margin: 0 0 1.25rem;
+
+	@media all and (min-width: 576px) {
+		margin-bottom: 1.5rem;
+	}
+
+	@media all and (min-width: 992px) {
+		margin-bottom: 1.67rem;
+	}
+
+	&:last-child {
+		margin-bottom: 0;
+	}
+}
+
+a {
+	color: $color_primary;
+	text-decoration: underline;
+
+	&:active,
+	&:hover,
+	&:focus {
+		color: $body;
+		text-decoration: none;
+	}
+}
+
+iframe,
+object {
+	height: auto;
+	max-width: 100%;
+}
+
+img {
+	height: auto;
+	max-width: 100%;
+}
+
+figcaption,
+.wp-caption-text {
+	font-size: 1rem;
+	font-style: italic;
+}
+
+blockquote {
+	border-left: 2px solid darken( $color_gray, 10% );
+	font-size: 17px;
+	font-style: italic;
+	font-weight: 500;
+	margin: 0 0 1.25rem;
+	padding: 0 0 0 1.25rem;
+
+	&:not(:last-child) {
+		margin-bottom: 1.25rem;
+	}
+}
+
+q {
+	font-style: italic;
+	font-weight: 500;
+}
+
+pre {
+	background-color: $color_gray;
+	padding: 1.5rem;
+	margin: 1.5rem 0 2rem;
+}
+
+.alignleft {
+	float: left;
+	margin-bottom: 1rem;
+	margin-right: 1.5rem;
+}
+
+.alignright {
+	float: right;
+	margin-bottom: 1rem;
+	margin-left: 1.5rem;
+}
+
+.wp-block-gallery {
+
+	&:not(.alignleft) {
+		margin-right: 0;
+	}
+
+	&:not(.alignright) {
+		margin-left: 0;
+	}
+}
+
+.wp-caption,
+.wp-block-image {
+	max-width: 100%;
+}
+
+.wp-block-image,
+.wp-block-cover {
+
+	img {
+
+		& + figcaption {
+			margin-top: .75rem;
+		}
+	}
+}
+
+// Adjustments to markup in standard WordPress content areas (so, not custom)
+.entry-content,
+.comment-content {
+
+	h1, .h1,
+	h2, .h2 {
+		font-size: 2rem;
+	}
+
+	h3, .h3 {
+		font-size: 1.5rem;
+	}
+
+	h4, .h4 {
+		color: $body_light;
+		font-size: 1.25rem;
+	}
+
+	h5, .h5,
+	h6, .h6 {
+		font-size: 1rem;
+	}
+
+	h6, .h6 {
+		color: $body_light;
+	}
+
+	ul, ol {
+		margin: 0 0 1.25rem 1.25rem;
+		padding: 0;
+
+		li {
+			margin-bottom: .5rem;
+
+			&::marker {
+				color: $body_light;
+			}
+
+			ul, ol {
+				margin-top: .5rem;
+			}
+		}
+	}
+
+	pre,
+	code {
+		font-size: 14px;
+		font-weight: 500;
+	}
+
+	.wp-block-preformatted {
+		padding: 1rem;
+	}
+
+	address {
+		margin-bottom: 1.25rem;
+	}
+
+	table {
+		font-size: 90%;
+	}
+}

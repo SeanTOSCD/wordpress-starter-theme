@@ -1,0 +1,10 @@
+body {
+	color: $body;
+	font-size: 17px;
+	line-height: 1.6;
+	overflow-wrap: break-word;
+
+	@media all and (min-width: 768px) {
+		font-size: 19px;
+	}
+}

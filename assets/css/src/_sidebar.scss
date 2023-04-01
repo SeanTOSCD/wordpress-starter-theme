@@ -1,0 +1,26 @@
+.sidebar-col {
+	font-size: 16px;
+
+	.widget_block {
+		margin-bottom: 1rem;
+
+		@media all and (min-width: 768px) {
+			margin-bottom: 2.5rem;
+		}
+	}
+
+	.wp-block-heading {
+		font-size: 1.25rem;
+	}
+
+	.wp-block-latest-comments {
+		padding-left: 0;
+	}
+
+	.widget_search {
+
+		.wp-block-search__label {
+			display: none;
+		}
+	}
+}

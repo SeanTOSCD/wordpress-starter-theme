@@ -1,0 +1,37 @@
+.grid-item {
+
+	.entry-header {
+
+		.post-thumbnail {
+			display: block;
+			margin-bottom: 1rem;
+		}
+
+		.entry-title {
+			font-size: 1.5rem;
+
+			@media all and (min-width: 768px) {
+				font-size: 1.75rem;
+			}
+
+			a {
+				color: $body;
+				text-decoration: none;
+
+				&:hover,
+				&:focus,
+				&:active {
+					color: $color_primary;
+				}
+			}
+		}
+	}
+
+	.entry-content {
+		font-size: 17px;
+	}
+
+	.entry-footer {
+		padding: 1rem 0 0;
+	}
+}
