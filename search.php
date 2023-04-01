@@ -7,7 +7,7 @@ get_header();
 
 get_template_part( 'template-parts/section', 'page-header', array(
 	'title' => get_search_query(),
-	'description' => sprintf( 'Search Results for: %s', '<span>' . get_search_query() . '</span>' ),
+	'description' => sprintf( __( 'Search Results for: %s', 'wst' ), '<span>' . get_search_query() . '</span>' ),
 ) );
 ?>
 

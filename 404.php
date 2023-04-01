@@ -6,8 +6,8 @@
 get_header();
 
 get_template_part( 'template-parts/section', 'page-header', array(
-	'title' => '404, unfortunately.',
-	'description' => 'It looks like nothing was found at this location. Try searching.',
+	'title' => __( '404, unfortunately.', 'wst' ),
+	'description' => __( 'It looks like nothing was found at this location. Try searching.', 'wst' ),
 ) );
 ?>
 

@@ -54,7 +54,7 @@ if ( post_password_required() ) {
 
             if ( ! comments_open() ) :
                 ?>
-                <p class="no-comments">Comments are closed.</p>
+                <p class="no-comments"><?php _e( 'Comments are closed.', 'wst' ); ?></p>
                 <?php
             endif;
 

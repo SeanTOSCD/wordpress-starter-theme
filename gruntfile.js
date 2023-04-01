@@ -47,6 +47,20 @@ module.exports = function(grunt) {
 			}
 		},
 
+		// Generate .pot file for translation.
+		pot: {
+			options: {
+				text_domain: 'wst',
+				dest: 'languages/',
+				keywords: ['__', '_e', '_x', '_n', '_ex', '_nx', '_c', '_nc', '__ngettext', '__nx', '_n_noop', '_nx_noop', 'esc_attr__', 'esc_html__', 'esc_attr_e', 'esc_html_e', 'esc_attr_x', 'esc_html_x', '_n_js', '_nx_js']
+			},
+			files: {
+				expand: true,
+				cwd: './',
+				src:  [ '**/*.php', '!node_modules/**/*' ]
+			},
+		},
+
 	});
 
 	// Load the plugins that provide the tasks.
@@ -54,6 +68,7 @@ module.exports = function(grunt) {
 	grunt.loadNpmTasks('grunt-contrib-sass');
 	grunt.loadNpmTasks('grunt-contrib-uglify');
 	grunt.loadNpmTasks('grunt-contrib-concat');
+	grunt.loadNpmTasks('grunt-pot');
 
 	// Running 'grunt watch' does the entire job
 };

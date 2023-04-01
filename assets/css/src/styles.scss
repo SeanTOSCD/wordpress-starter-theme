@@ -5,6 +5,7 @@ Description: WordPress Starter Theme
 Version: 1.0.0
 License: GNU General Public License v2 or later
 License URI: LICENSE
+Text Domain: wst
 */
 
 /* Required Bootstrap styles */
@@ -16,6 +17,7 @@ License URI: LICENSE
 
 @import "_mixins";
 @import "_colors";
+
 
 @import "_archive";
 @import "_comments";

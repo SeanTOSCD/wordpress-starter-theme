@@ -20,6 +20,9 @@ const THEME_INCLUDES = THEME_TEMPLATE_DIR . '/includes';
  */
 function wst_setup() {
 
+	// Make theme available for translation.
+	load_theme_textdomain( 'wst', get_template_directory() . '/languages' );
+
 	// Add default posts and comments RSS feed links to head.
 	add_theme_support( 'automatic-feed-links' );
 
@@ -43,7 +46,7 @@ function wst_setup() {
 	// This theme uses wp_nav_menu() in one location.
 	register_nav_menus(
 		array(
-			'primary-menu' => 'Primary',
+			'primary-menu' => __( 'Primary', 'wst' ),
 		)
 	);
 

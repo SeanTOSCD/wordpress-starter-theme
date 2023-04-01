@@ -38,7 +38,7 @@
                     <?php if ( has_nav_menu( 'primary-menu' ) ) { ?>
                         <div class="nav-col col-6 col-md-8 col-lg-10 col-xl-9 col-xxl-8 text-end">
                             <nav id="site-navigation" class="main-navigation">
-                                <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false">Menu</button>
+                                <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php _e( 'Menu', 'wst' ); ?></button>
                                 <?php
                                 wp_nav_menu(
                                     array(
@@ -47,7 +47,7 @@
                                     )
                                 );
                                 ?>
-                                <button class="close-menu">Close Menu</button>
+                                <button class="close-menu"><?php _e( 'Close Menu', 'wst' ); ?></button>
                             </nav>
                         </div>
                     <?php } ?>
