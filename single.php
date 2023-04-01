@@ -25,8 +25,8 @@ get_template_part( 'template-parts/section', 'page-header', array(
 
 		                    the_post_navigation(
 			                    array(
-				                    'prev_text' => '<span class="nav-subtitle">' . esc_html__( 'Previous:', '_s' ) . '</span> <span class="nav-title">%title</span>',
-				                    'next_text' => '<span class="nav-subtitle">' . esc_html__( 'Next:', '_s' ) . '</span> <span class="nav-title">%title</span>',
+				                    'prev_text' => '<span class="nav-subtitle">' . esc_html__( 'Previous:', 'wst' ) . '</span> <span class="nav-title">%title</span>',
+				                    'next_text' => '<span class="nav-subtitle">' . esc_html__( 'Next:', 'wst' ) . '</span> <span class="nav-title">%title</span>',
 			                    )
 		                    );
 
