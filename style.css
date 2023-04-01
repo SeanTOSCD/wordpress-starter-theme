@@ -8348,14 +8348,19 @@ select {
   margin: 0;
   padding: 0; }
   #site-navigation #primary-menu .menu-item a {
+    color: #444;
     font-size: 16px;
     font-weight: 600;
     line-height: 1;
     text-decoration: none; }
+    #site-navigation #primary-menu .menu-item a:active, #site-navigation #primary-menu .menu-item a:focus, #site-navigation #primary-menu .menu-item a:hover {
+      text-decoration: underline; }
   #site-navigation #primary-menu .menu-item.button a {
     color: #fff; }
-  #site-navigation #primary-menu .menu-item.current-menu-item a:active, #site-navigation #primary-menu .menu-item.current-menu-item a:focus, #site-navigation #primary-menu .menu-item.current-menu-item a:hover {
-    cursor: text; }
+  #site-navigation #primary-menu .menu-item.current-menu-item a {
+    text-decoration: underline; }
+    #site-navigation #primary-menu .menu-item.current-menu-item a:active, #site-navigation #primary-menu .menu-item.current-menu-item a:focus, #site-navigation #primary-menu .menu-item.current-menu-item a:hover {
+      cursor: text; }
   #site-navigation #primary-menu .menu-item .sub-menu {
     list-style-type: none;
     padding-left: 0; }

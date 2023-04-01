@@ -25,10 +25,17 @@
 		.menu-item {
 
 			a {
+				color: $body;
 				font-size: 16px;
 				font-weight: 600;
 				line-height: 1;
 				text-decoration: none;
+
+				&:active,
+				&:focus,
+				&:hover {
+					text-decoration: underline;
+				}
 			}
 
 			&.button {
@@ -41,6 +48,7 @@
 			&.current-menu-item {
 
 				a {
+					text-decoration: underline;
 
 					&:active,
 					&:focus,
