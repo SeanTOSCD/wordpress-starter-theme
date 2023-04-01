@@ -3,17 +3,27 @@
 	.site-header-row {
 		align-items: center;
 
-		.site-title {
-			font-weight: 700;
+		.site-branding {
 
-			a {
-				color: $body;
-				text-decoration: none;
+			.custom-logo-link {
 
-				&:hover,
-				&:focus,
-				&:active {
-					color: $color_primary;
+				.custom-logo {
+					max-width: 120px;
+				}
+			}
+
+			.site-title {
+				font-weight: 700;
+
+				a {
+					color: $body;
+					text-decoration: none;
+
+					&:hover,
+					&:focus,
+					&:active {
+						color: $color_primary;
+					}
 				}
 			}
 		}

@@ -5,4 +5,18 @@
 	a {
 		color: $link_subdued;
 	}
+
+	.site-copyright {
+		font-weight: 700;
+
+		a {
+			text-decoration: none;
+
+			&:active,
+			&:focus,
+			&:hover {
+				color: $color_primary;
+			}
+		}
+	}
 }

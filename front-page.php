@@ -6,7 +6,7 @@
 get_header();
 
 $title = get_bloginfo( 'description' );
-$description = '';
+$description = has_excerpt() ? get_the_excerpt() : '';
 
 if ( class_exists( 'acf' ) ) {
 

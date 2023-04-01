@@ -15,7 +15,7 @@
 get_header();
 
 $title = get_the_title();
-$description = '';
+$description = has_excerpt() ? get_the_excerpt() : '';
 
 if ( class_exists( 'acf' ) ) {
 

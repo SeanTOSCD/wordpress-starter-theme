@@ -29,12 +29,10 @@ function wst_body_classes( $classes ) {
 	// Adds a class of has-post-thumbnail if the page has a featured image.
 	if ( ( is_single() || is_page_template( 'template-narrow.php' ) ) && has_post_thumbnail( $post->ID ) ) {
 		$classes[] = 'has-post-thumbnail';
-	} else {
-		$classes[] = 'has-no-post-thumbnail';
 	}
 
 	// Adds a class of page-header-centered if the page should have a centered page header.
-	if ( is_single() || is_page_template( 'template-narrow.php' ) ) {
+	if ( is_front_page() || is_single() || is_page_template( 'template-narrow.php' ) ) {
 		$classes[] = 'page-header-centered';
 	}
 
@@ -70,3 +68,13 @@ function wst_pingback_header() {
 	}
 }
 add_action( 'wp_head', 'wst_pingback_header' );
+
+/**
+ * Add excerpts to pages.
+ *
+ * @return void
+ */
+function wst_add_excerpts_to_pages() {
+	add_post_type_support( 'page', 'excerpt' );
+}
+add_action( 'init', 'wst_add_excerpts_to_pages' );

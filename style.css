@@ -8252,6 +8252,12 @@ progress {
   font-size: 15px; }
   #colophon a {
     color: #515151; }
+  #colophon .site-copyright {
+    font-weight: 700; }
+    #colophon .site-copyright a {
+      text-decoration: none; }
+      #colophon .site-copyright a:active, #colophon .site-copyright a:focus, #colophon .site-copyright a:hover {
+        color: blue; }
 
 .button,
 button,
@@ -8324,12 +8330,14 @@ select {
 
 #masthead .site-header-row {
   align-items: center; }
-  #masthead .site-header-row .site-title {
+  #masthead .site-header-row .site-branding .custom-logo-link .custom-logo {
+    max-width: 120px; }
+  #masthead .site-header-row .site-branding .site-title {
     font-weight: 700; }
-    #masthead .site-header-row .site-title a {
+    #masthead .site-header-row .site-branding .site-title a {
       color: #444;
       text-decoration: none; }
-      #masthead .site-header-row .site-title a:hover, #masthead .site-header-row .site-title a:focus, #masthead .site-header-row .site-title a:active {
+      #masthead .site-header-row .site-branding .site-title a:hover, #masthead .site-header-row .site-branding .site-title a:focus, #masthead .site-header-row .site-branding .site-title a:active {
         color: blue; }
 
 #site-navigation .menu-toggle {
