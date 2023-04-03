@@ -18,7 +18,7 @@ get_template_part( 'template-parts/section', 'page-header', array(
                 <?php
                 if ( have_posts() ) :
                     ?>
-                    <div class="grid-items-row row g-4">
+                    <div class="grid-items-row row gy-4 gx-sm-4">
                         <?php
                         while ( have_posts() ) :
 	                        the_post();

@@ -32,7 +32,7 @@ get_template_part( 'template-parts/section', 'page-header', array(
 				<?php
 				if ( have_posts() ) :
                     ?>
-                    <div class="grid-items-row row g-5">
+                    <div class="grid-items-row row gy-5 gx-sm-5">
                         <?php
                         while ( have_posts() ) :
                             the_post();
