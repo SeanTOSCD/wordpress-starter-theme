@@ -15,7 +15,6 @@ h6, .h6,
 
 h1, .h1,
 .page-title,
-.section-title,
 .archive .page-title span {
 	font-size: 2rem;
 
@@ -56,7 +55,8 @@ h2, .h2 {
 	}
 }
 
-h3, .h3 {
+h3, .h3,
+.section-title {
 	font-size: 1.5rem;
 
 	@media all and (min-width: 576px) {

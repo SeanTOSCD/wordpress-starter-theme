@@ -28,7 +28,12 @@ get_template_part( 'template-parts/section', 'page-header', array(
 <section class="generic-section">
 	<div class="inner">
 		<div class="container">
-			<p>Where it all begins.</p>
+			<header class="section-header">
+                <span class="section-title">This is a section title.</span>
+                <div class="section-description">
+                    <p>Where it all begins.</p>
+                </div>
+            </header>
 		</div>
 	</div>
 </section>
