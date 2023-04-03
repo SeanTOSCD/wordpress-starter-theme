@@ -1,6 +1,8 @@
 <?php
 /**
  * Template Name: Wide
+ *
+ * Displays the page with a page-width content column. Good for Gutenberg fun.
  */
 
 get_header();

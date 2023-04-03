@@ -1,6 +1,6 @@
 <?php
 /**
- * The main template file. Almost never used.
+ * The main template file. The final fallback if no other template is found.
  */
 
 get_header();
