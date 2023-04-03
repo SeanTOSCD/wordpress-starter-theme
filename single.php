@@ -16,7 +16,7 @@ get_template_part( 'template-parts/section', 'page-header', array(
             <div class="container">
 
                 <div class="row justify-content-around">
-                    <div class="content-col col-12 col-lg-10 col-xl-9 col-xxl-8">
+                    <div class="content-col col-12 col-lg-9 col-xl-8 col-xxl-7">
 	                    <?php
 	                    while ( have_posts() ) :
 		                    the_post();

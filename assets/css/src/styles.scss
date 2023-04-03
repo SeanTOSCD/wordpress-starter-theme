@@ -19,6 +19,7 @@ Text Domain: wst
 @import "_colors";
 
 @import "_archive";
+@import "_blocks";
 @import "_comments";
 @import "_footer";
 @import "_forms";
@@ -31,3 +32,5 @@ Text Domain: wst
 @import "_singular";
 @import "_structure";
 @import "_typography";
+
+@import "templates/_wide";

@@ -4,7 +4,11 @@ body {
 	line-height: 1.6;
 	overflow-wrap: break-word;
 
-	@media all and (min-width: 768px) {
+	@media all and (min-width: 1200px) {
+		font-size: 18px;
+	}
+
+	@media all and (min-width: 1400px) {
 		font-size: 19px;
 	}
 }

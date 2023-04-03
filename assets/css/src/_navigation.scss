@@ -1,3 +1,8 @@
+.menu {
+	margin: 0;
+	padding: 0;
+}
+
 #site-navigation {
 
 	.menu-toggle {
@@ -23,6 +28,7 @@
 		padding: 0;
 
 		.menu-item {
+			margin-bottom: 0;
 
 			a {
 				color: $body;
@@ -35,13 +41,6 @@
 				&:focus,
 				&:hover {
 					text-decoration: underline;
-				}
-			}
-
-			&.button {
-
-				a {
-					color: #fff;
 				}
 			}
 

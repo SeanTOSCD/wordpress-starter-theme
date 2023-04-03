@@ -35,6 +35,10 @@
 			.inner {
 				padding-bottom: 4.5rem;
 
+				@media all and (min-width: 768px) {
+					padding-bottom: 6rem;
+				}
+
 				@media all and (min-width: 992px) {
 					padding-bottom: 7rem;
 				}
@@ -44,7 +48,7 @@
 				}
 
 				@media all and (min-width: 1400px) {
-					padding-bottom: 10rem;
+					padding-bottom: 9rem;
 				}
 			}
 		}
@@ -59,6 +63,15 @@
 
 				.entry-thumbnail {
 					margin-top: -2rem;
+
+					@media all and (min-width: 620px) {
+						margin-left: -1.5rem;
+						margin-right: -1.5rem;
+					}
+
+					@media all and (min-width: 768px) {
+						margin-top: -3.25rem;
+					}
 
 					@media all and (min-width: 992px) {
 						margin-left: -3rem;

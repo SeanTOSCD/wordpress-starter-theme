@@ -1,0 +1,36 @@
+@import "../../../node_modules/bootstrap/scss/bootstrap-reboot";
+@import "_colors";
+@import "_mixins";
+@import "_typography";
+@import "_blocks";
+@import "_forms";
+
+body {
+
+	* {
+		box-sizing: border-box;
+	}
+
+	h1, .h1,
+	h2, .h2,
+	h3, .h3,
+	h4, .h4,
+	h5, .h5,
+	h6, .h6 {
+		font-weight: 700;
+	}
+
+	@include heading_font_reduced;
+
+	.wp-element-button,
+	.wp-block-buttons .wp-block-button .wp-element-button {
+		border-radius: 0;
+	}
+
+	.wp-block-search {
+
+		.wp-block-search__input {
+			width: unset;
+		}
+	}
+}
