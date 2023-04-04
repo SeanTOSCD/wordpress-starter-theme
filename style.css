@@ -8958,6 +8958,9 @@ section[class*="-section"] .section-header {
     @media all and (min-width: 768px) {
       .sidebar-col .widget_block {
         margin-bottom: 2.5rem; } }
+    .sidebar-col .widget_block ul {
+      padding-left: 0;
+      margin-left: 0; }
   .sidebar-col .wp-block-heading {
     font-size: 1.25rem; }
   .sidebar-col .wp-block-latest-comments {

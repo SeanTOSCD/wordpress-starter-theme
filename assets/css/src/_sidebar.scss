@@ -1,11 +1,18 @@
 .sidebar-col {
 	font-size: 16px;
 
+
+
 	.widget_block {
 		margin-bottom: 1rem;
 
 		@media all and (min-width: 768px) {
 			margin-bottom: 2.5rem;
+		}
+
+		ul {
+			padding-left: 0;
+			margin-left: 0;
 		}
 	}
 
