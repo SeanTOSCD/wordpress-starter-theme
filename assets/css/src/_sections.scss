@@ -59,14 +59,14 @@ section[class*="-section"] {
 	.page-header {
 
 		.page-title {
-			color: $link_subdued;
+			color: var(--subdued-action);
 			font-size: 1rem;
 			font-weight: 700;
 			line-height: 1;
 			text-transform: uppercase;
 
 			span {
-				color: $body;
+				color: var(--body);
 				line-height: 1.2;
 				text-transform: none;
 			}

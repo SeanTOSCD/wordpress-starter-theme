@@ -122,12 +122,13 @@ function disable_classic_theme_styles() {
 	wp_deregister_style( 'classic-theme-styles' );
 	wp_dequeue_style( 'classic-theme-styles' );
 }
-add_filter('wp_enqueue_scripts', 'disable_classic_theme_styles', 100);
+add_filter( 'wp_enqueue_scripts', 'disable_classic_theme_styles', 100 );
 
 // Theme functions
 require THEME_INCLUDES . '/gutenberg.php';
 require THEME_INCLUDES . '/template-functions.php';
 require THEME_INCLUDES . '/template-tags.php';
+require THEME_INCLUDES . '/customizer.php';
 
 // Integrations
 if ( class_exists( 'acf' ) ) {

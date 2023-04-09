@@ -8,7 +8,7 @@ if ( post_password_required() ) {
 }
 ?>
 
-<div class="post-comments background-gray p-4 p-md-5">
+<div class="post-comments background-lightest p-4 p-md-5">
 
     <div id="comments" class="comments-area">
 

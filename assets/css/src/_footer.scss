@@ -1,9 +1,9 @@
 #colophon {
-	color: $body_light;
+	color: var(--subdued-body);
 	font-size: 15px;
 
 	a {
-		color: $link_subdued;
+		color: var(--subdued-action);
 	}
 
 	.site-copyright {
@@ -15,7 +15,7 @@
 			&:active,
 			&:focus,
 			&:hover {
-				color: $color_primary;
+				color: var(--action);
 			}
 		}
 	}

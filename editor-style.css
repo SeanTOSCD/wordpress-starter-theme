@@ -398,6 +398,64 @@ progress {
 [hidden] {
   display: none !important; }
 
+/**
+ * Feel free to configure your own Sass variables here.
+ *
+ * By default, the theme only uses CSS variables.
+ */
+body {
+  color: var(--body); }
+
+/* White */
+.has-white-color {
+  color: #fff; }
+
+.has-white-background-color {
+  background-color: #fff; }
+
+/* Body */
+.has-body-color {
+  color: var(--body); }
+
+.has-body-background-color {
+  background-color: var(--body); }
+
+/* Body - Subdued */
+.has-subdued-body-color {
+  color: var(--subdued-body); }
+
+.has-subdued-body-background-color {
+  background-color: var(--subdued-body); }
+
+/* Lightest */
+.has-the-lightest-color {
+  color: var(--lightest); }
+
+.background-lightest,
+.has-the-lightest-background-color {
+  background-color: var(--lightest); }
+
+/* Darkest */
+.has-the-darkest-color {
+  color: var(--darkest); }
+
+.has-the-darkest-background-color {
+  background-color: var(--darkest); }
+
+/* Action */
+.has-action-color {
+  color: var(--action); }
+
+.has-action-background-color {
+  background-color: var(--action); }
+
+/* Action - Subdued */
+.has-subdued-action-color {
+  color: var(--subdued-action); }
+
+.has-subdued-action-background-color {
+  background-color: var(--subdued-action); }
+
 body {
   font-size: 17px;
   line-height: 1.6;
@@ -415,7 +473,7 @@ input[type="submit"],
 .wp-block-button__link,
 .wp-block-file__button,
 .wp-block-search__button {
-  background-color: #222;
+  background-color: var(--action);
   border: 0;
   border-radius: 0;
   color: #fff;
@@ -450,8 +508,8 @@ input[type="submit"],
   .wp-block-file__button.outline,
   .wp-block-search__button.outline {
     background-color: transparent;
-    border: 2px solid #222;
-    color: #222;
+    border: 2px solid var(--action);
+    color: var(--action);
     padding: calc( .53em - 2px ) calc( 1.7em - 2px); }
     .button.outline:active, .button.outline:focus, .button.outline:hover,
     button.outline:active,
@@ -469,18 +527,18 @@ input[type="submit"],
     .wp-block-search__button.outline:active,
     .wp-block-search__button.outline:focus,
     .wp-block-search__button.outline:hover {
-      background-color: #222;
+      background-color: var(--action);
       color: #fff;
       cursor: pointer;
       opacity: .8; }
 
 .wp-block-button.is-style-outline .wp-element-button {
   background-color: transparent;
-  border: 2px solid #222;
-  color: #222;
+  border: 2px solid var(--action);
+  color: var(--action);
   padding: calc( .53em - 2px ) calc( 1.7em - 2px); }
   .wp-block-button.is-style-outline .wp-element-button:active, .wp-block-button.is-style-outline .wp-element-button:focus, .wp-block-button.is-style-outline .wp-element-button:hover {
-    background-color: #222;
+    background-color: var(--action);
     border-color: transparent;
     color: #fff;
     cursor: pointer; }
@@ -495,7 +553,7 @@ textarea,
 select {
   border: 0;
   border-radius: 0;
-  box-shadow: 0 0 0 2px inset #222;
+  box-shadow: 0 0 0 2px inset var(--body);
   box-sizing: border-box;
   padding: .53em;
   width: 100%; }
@@ -505,8 +563,8 @@ select {
  */
 .wp-block-quote,
 .wp-block-quote-editor {
-  background-color: #f5f5f5;
-  color: #484848;
+  background-color: var(--lightest);
+  color: var(--subdued-body);
   font-size: 115%;
   font-weight: 600;
   padding: 1.5rem; }
@@ -530,13 +588,13 @@ select {
 
 .wp-block-pullquote,
 .wp-block-pullquote-editor {
-  background-color: #f5f5f5; }
+  background-color: var(--lightest); }
   .wp-block-pullquote blockquote,
   .wp-block-pullquote-editor blockquote {
-    color: #484848; }
+    color: var(--subdued-body); }
     .wp-block-pullquote blockquote p,
     .wp-block-pullquote-editor blockquote p {
-      color: #222;
+      color: var(--body);
       font-size: 115%;
       font-weight: 600; }
       .wp-block-pullquote blockquote p:last-of-type,
@@ -565,12 +623,12 @@ select {
 
 .wp-block-audio,
 .wp-block-audio-editor {
-  background-color: #f5f5f5;
+  background-color: var(--lightest);
   padding: 1.5rem 1.25rem 1rem; }
 
 .wp-block-file,
 .wp-block-file-editor {
-  background-color: #f5f5f5;
+  background-color: var(--lightest);
   padding: 1.5rem;
   text-align: center; }
   .wp-block-file .wp-block-file__button,
@@ -579,7 +637,7 @@ select {
 
 .wp-block-table-of-contents,
 .wp-block-table-of-contents-editor {
-  background-color: #f5f5f5;
+  background-color: var(--lightest);
   font-size: 85%;
   padding: 2rem; }
   @media all and (min-width: 768px) {
@@ -603,22 +661,22 @@ select {
       padding-left: 1rem; }
   .wp-block-table-of-contents a,
   .wp-block-table-of-contents-editor a {
-    color: #2f2f2f; }
+    color: var(--subdued-action); }
     .wp-block-table-of-contents a:active, .wp-block-table-of-contents a:focus, .wp-block-table-of-contents a:hover,
     .wp-block-table-of-contents-editor a:active,
     .wp-block-table-of-contents-editor a:focus,
     .wp-block-table-of-contents-editor a:hover {
-      color: #222; }
+      color: var(--body); }
 
 .wp-block-search .wp-block-search__inside-wrapper,
 .wp-block-search-editor .wp-block-search__inside-wrapper {
-  background-color: #f5f5f5;
+  background-color: var(--lightest);
   border: none;
   padding: 8px; }
 
 .wp-block-preformatted,
 .wp-block-preformatted-editor {
-  background-color: #f5f5f5;
+  background-color: var(--lightest);
   padding: 1.5rem; }
 
 /**
@@ -636,7 +694,7 @@ body {
   body * {
     box-sizing: border-box; }
   body .edit-post-visual-editor__post-title-wrapper {
-    border-bottom: 1px solid #f5f5f5;
+    border-bottom: 1px solid var(--lightest);
     margin-bottom: 2rem;
     padding-bottom: 3rem; }
     body .edit-post-visual-editor__post-title-wrapper h1 {

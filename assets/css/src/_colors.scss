@@ -1,45 +1,67 @@
 body {
-	color: $body;
+	color: var(--body);
 }
 
-/* Gray */
-.background-white,
-.has-white-background-color {
-	background-color: #fff;
-}
-
+/* White */
 .has-white-color {
 	color: #fff;
 }
 
-/* Gray */
-.background-gray,
-.has-light-gray-background-color {
-	background-color: #f5f5f5;
+.has-white-background-color {
+	background-color: #fff;
 }
 
-.has-light-gray-color {
-	color: #f5f5f5;
+/* Body */
+.has-body-color {
+	color: var(--body);
 }
 
-/* Dark gray */
-.background-dark-gray,
-.has-dark-gray-background-color {
-	background-color: #222222;
+.has-body-background-color {
+	background-color: var(--body);
 }
 
-.color-dark-gray,
-.has-dark-gray-color {
-	color: #222222;
+/* Body - Subdued */
+.has-subdued-body-color {
+	color: var(--subdued-body);
 }
 
-/* Blue */
-.background-blue,
-.has-blue-background-color {
-	background-color: #0073aa;
+.has-subdued-body-background-color {
+	background-color: var(--subdued-body);
 }
 
-.color-blue,
-.has-blue-color {
-	color: #0073aa;
+/* Lightest */
+.has-the-lightest-color {
+	color: var(--lightest);
+}
+
+.background-lightest,
+.has-the-lightest-background-color {
+	background-color: var(--lightest);
+}
+
+/* Darkest */
+.has-the-darkest-color {
+	color: var(--darkest);
+}
+
+.has-the-darkest-background-color {
+	background-color: var(--darkest);
+}
+
+/* Action */
+.has-action-color {
+	color: var(--action);
+}
+
+.has-action-background-color {
+	background-color: var(--action);
+}
+
+/* Action - Subdued */
+.has-subdued-action-color {
+	color: var(--subdued-action);
+}
+
+.has-subdued-action-background-color {
+	background-color: var(--subdued-action);
 }

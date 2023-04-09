@@ -8,7 +8,7 @@
 	.menu-toggle {
 		background: none;
 		border: 0;
-		color: $body;
+		color: var(--body);
 		cursor: pointer;
 		padding: 0;
 
@@ -31,7 +31,7 @@
 			margin-bottom: 0;
 
 			a {
-				color: $body;
+				color: var(--body);
 				font-size: 16px;
 				font-weight: 600;
 				line-height: 1;
@@ -190,7 +190,7 @@
 				&.current-menu-item {
 
 					a {
-						color: $body;
+						color: var(--body);
 					}
 				}
 
@@ -209,7 +209,7 @@
 
 					& > .sub-menu {
 						background-color: #fff;
-						border: 1px solid $color_gray;
+						border: 1px solid var(--lightest);
 						display: none;
 						padding: 7px 1.2rem;
 						position: absolute;
@@ -230,7 +230,7 @@
 					&.sub-menu-active {
 
 						& > a {
-							color: $body;
+							color: var(--body);
 							text-decoration: underline;
 						}
 
@@ -257,7 +257,7 @@
 
 	// Mobile menu styles
 	&.toggled {
-		background-color: $color_gray;
+		background-color: var(--lightest);
 		height: calc( 100vh - 46px );
 		padding: 2rem;
 		position: absolute;
@@ -310,7 +310,7 @@
 				&.current-menu-item {
 
 					a {
-						color: $body;
+						color: var(--body);
 					}
 				}
 			}
@@ -319,7 +319,7 @@
 				text-align: left;
 
 				& > a {
-					border-bottom: 1px solid $color_gray;
+					border-bottom: 1px solid var(--lightest);
 					display: block;
 					padding: 1rem;
 				}
@@ -336,7 +336,7 @@
 
 					& > .sub-menu {
 						background-color: #fff;
-						border-bottom: 1px solid $color_gray;
+						border-bottom: 1px solid var(--lightest);
 						display: none;
 						padding: 7px 1rem 7px 0;
 
@@ -382,13 +382,13 @@
 	.nav-next {
 
 		a {
-			color: $link_subdued;
+			color: var(--subdued-action);
 			font-size: 17px;
 			text-decoration: none;
 		}
 
 		.nav-subtitle {
-			color: $body;
+			color: var(--body);
 			display: block;
 			font-size: 15px;
 			font-weight: 700;
@@ -396,7 +396,7 @@
 			&:active,
 			&:focus,
 			&:hover {
-				color: $body;
+				color: var(--body);
 			}
 		}
 

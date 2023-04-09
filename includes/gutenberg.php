@@ -28,20 +28,35 @@ function wst_editor_color_palette() {
 			'color' => '#fff',
 		),
 		array(
-			'name'  => __( 'Light Gray', 'wst' ),
-			'slug'  => 'light-gray',
-			'color' => '#f5f5f5',
+			'name'  => __( 'Body Text', 'wst' ),
+			'slug'  => 'body',
+			'color' => get_theme_mod( 'body_color', '#222222' ),
 		),
 		array(
-			'name'  => __( 'Dark Gray', 'wst' ),
-			'slug'  => 'dark-gray',
-			'color' => '#222222',
+			'name'  => __( 'Body Text - Subdued', 'wst' ),
+			'slug'  => 'subdued-body',
+			'color' => get_theme_mod( 'subdued_body_color', '#555555' ),
 		),
 		array(
-			'name'  => __( 'Blue', 'wst' ),
-			'slug'  => 'blue',
-			'color' => '#0073aa',
-		)
+			'name'  => __( 'The Lightest Color', 'wst' ),
+			'slug'  => 'the-lightest',
+			'color' => get_theme_mod( 'lightest_color', '#f5f5f5' ),
+		),
+		array(
+			'name'  => __( 'The Darkest Color', 'wst' ),
+			'slug'  => 'the-darkest',
+			'color' => get_theme_mod( 'darkest_color', '#222222' ),
+		),
+		array(
+			'name'  => __( 'Action', 'wst' ),
+			'slug'  => 'action',
+			'color' => get_theme_mod( 'action_color', '#0073aa' ),
+		),
+		array(
+			'name'  => __( 'Action - Subdued', 'wst' ),
+			'slug'  => 'subdued-action',
+			'color' => get_theme_mod( 'subdued_action_color', '#666666' ),
+		),
 	);
 
 	add_theme_support( 'editor-color-palette', $wst_colors );

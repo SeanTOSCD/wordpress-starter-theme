@@ -4,7 +4,7 @@ input[type="submit"],
 .wp-block-button__link,
 .wp-block-file__button,
 .wp-block-search__button {
-	background-color: $body;
+	background-color: var(--action);
 	border: 0;
 	border-radius: 0;
 	color: #fff;
@@ -24,14 +24,14 @@ input[type="submit"],
 
 	&.outline {
 		background-color: transparent;
-		border: 2px solid $body;
-		color: $body;
+		border: 2px solid var(--action);
+		color: var(--action);
 		padding: calc( .53em - 2px ) calc( 1.7em - 2px);
 
 		&:active,
 		&:focus,
 		&:hover {
-			background-color: $body;
+			background-color: var(--action);
 			color: #fff;
 			cursor: pointer;
 			opacity: .8;
@@ -45,14 +45,14 @@ input[type="submit"],
 
 		.wp-element-button {
 			background-color: transparent;
-			border: 2px solid $body;
-			color: $body;
+			border: 2px solid var(--action);
+			color: var(--action);
 			padding: calc( .53em - 2px ) calc( 1.7em - 2px);
 
 			&:active,
 			&:focus,
 			&:hover {
-				background-color: $body;
+				background-color: var(--action);
 				border-color: transparent;
 				color: #fff;
 				cursor: pointer;
@@ -71,7 +71,7 @@ textarea,
 select {
 	border: 0;
 	border-radius: 0;
-	box-shadow: 0 0 0 2px inset $color_gary_dark;
+	box-shadow: 0 0 0 2px inset var(--body);
 	box-sizing: border-box;
 	padding: .53em;
 	width: 100%;

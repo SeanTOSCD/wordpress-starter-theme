@@ -16,12 +16,12 @@
 
 	.logged-in-as,
 	.comment-notes {
-		color: $body_light;
+		color: var(--subdued-body);
 		font-size: 14px;
 		font-weight: 500;
 
 		a {
-			color: $link_subdued;
+			color: var(--subdued-action);
 		}
 	}
 
@@ -48,7 +48,7 @@
 				}
 
 				a {
-					color: $body;
+					color: var(--body);
 				}
 			}
 
@@ -66,7 +66,7 @@
 			.reply {
 
 				a {
-					color: $link_subdued;
+					color: var(--subdued-action);
 					font-size: 13px;
 					font-weight: 700;
 				}
@@ -90,7 +90,7 @@
 				font-size: 15px;
 
 				a {
-					color: $link_subdued;
+					color: var(--subdued-action);
 				}
 			}
 
@@ -105,7 +105,7 @@
 	}
 
 	.no-comments {
-		background: $color_gray;
+		background: var(--lightest);
 		font-weight: 500;
 		margin-top: 2rem;
 		padding: 1rem;
@@ -147,7 +147,7 @@
 		}
 
 		#cancel-comment-reply-link {
-			color: $link_subdued;
+			color: var(--subdued-action);
 			display: inline-block;
 			font-size: 15px;
 			margin-left: 10px;

@@ -16,7 +16,7 @@ if ( isset( $args['description'] ) && ! empty( $args['description'] ) ) {
 }
 ?>
 
-<section class="page-header background-gray">
+<section class="page-header background-lightest">
     <div class="inner">
         <div class="container">
 

@@ -3,6 +3,7 @@
 
 // Make Sass variables available for editor stylesheets
 @import "_variables";
+@import "_colors";
 
 // Make Sass mixins available for editor stylesheets
 @import "_mixins";
@@ -23,7 +24,7 @@ body {
 
 	/* The post title - let's visually separate it from the post_content */
 	.edit-post-visual-editor__post-title-wrapper {
-		border-bottom: 1px solid $color_gray;
+		border-bottom: 1px solid var(--lightest);
 		margin-bottom: 2rem;
 		padding-bottom: 3rem;
 

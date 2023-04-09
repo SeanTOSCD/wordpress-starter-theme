@@ -3,8 +3,8 @@
  */
 .wp-block-quote,
 .wp-block-quote-editor {
-	background-color: $color_gray;
-	color: $body_light;
+	background-color: var(--lightest);
+	color: var(--subdued-body);
 	font-size: 115%;
 	font-weight: 600;
 	padding: 1.5rem;
@@ -33,13 +33,13 @@
 
 .wp-block-pullquote,
 .wp-block-pullquote-editor {
-	background-color: $color_gray;
+	background-color: var(--lightest);
 
 	blockquote {
-		color: $body_light;
+		color: var(--subdued-body);
 
 		p {
-			color: $body;
+			color: var(--body);
 			font-size: 115%;
 			font-weight: 600;
 
@@ -83,13 +83,13 @@
 
 .wp-block-audio,
 .wp-block-audio-editor {
-	background-color: $color_gray;
+	background-color: var(--lightest);
 	padding: 1.5rem 1.25rem 1rem;
 }
 
 .wp-block-file,
 .wp-block-file-editor {
-	background-color: $color_gray;
+	background-color: var(--lightest);
 	padding: 1.5rem;
 	text-align: center;
 
@@ -100,7 +100,7 @@
 
 .wp-block-table-of-contents,
 .wp-block-table-of-contents-editor {
-	background-color: $color_gray;
+	background-color: var(--lightest);
 	font-size: 85%;
 	padding: 2rem;
 
@@ -132,12 +132,12 @@
 	}
 
 	a {
-		color: $link_subdued;
+		color: var(--subdued-action);
 
 		&:active,
 		&:focus,
 		&:hover {
-			color: $body;
+			color: var(--body);
 		}
 	}
 }
@@ -146,7 +146,7 @@
 .wp-block-search-editor {
 
 	.wp-block-search__inside-wrapper {
-		background-color: $color_gray;
+		background-color: var(--lightest);
 		border: none;
 		padding: 8px;
 	}
@@ -154,6 +154,6 @@
 
 .wp-block-preformatted,
 .wp-block-preformatted-editor {
-	background-color: $color_gray;
+	background-color: var(--lightest);
 	padding: 1.5rem;
 }
