@@ -8655,7 +8655,7 @@ select {
         background-color: #fff;
         border-bottom: 1px solid #f5f5f5;
         display: none;
-        padding: 7px 1rem; }
+        padding: 7px 1rem 7px 0; }
         #site-navigation.toggled #primary-menu > .menu-item.menu-item-has-children > .sub-menu > .menu-item.menu-item-has-children:not(:last-child) {
           padding-bottom: 4px; }
       #site-navigation.toggled #primary-menu > .menu-item.menu-item-has-children.sub-menu-active > a {
