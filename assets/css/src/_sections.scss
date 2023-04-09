@@ -3,14 +3,13 @@ section[class*="-section"] {
 	.section-header {
 		margin-bottom: 3rem;
 
-		.section-title {
-
-		}
-
 		.section-description {
 
 			p {
 
+				@media all and (min-width: 768px) {
+					font-size: 21px;
+				}
 			}
 		}
 	}
@@ -18,11 +17,27 @@ section[class*="-section"] {
 
 .page-header {
 
+	&.centered {
+		text-align: center;
+
+		.page-description {
+			margin-left: auto;
+			margin-right: auto;
+		}
+	}
+
 	.page-title {
 		margin-bottom: .75rem;
 
 		&:last-child {
 			margin-bottom: 0;
+		}
+
+		& + p {
+
+			@media all and (min-width: 768px) {
+				font-size: 21px;
+			}
 		}
 	}
 

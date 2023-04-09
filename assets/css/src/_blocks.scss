@@ -1,9 +1,8 @@
-/* Core Blocks */
-.wp-block-post-content > [class*="wp-block-"] {
-	@include block_spacing;
-}
-
-.wp-block-quote {
+/**
+ * Core block styles - both front-end and editor
+ */
+.wp-block-quote,
+.wp-block-quote-editor {
 	background-color: $color_gray;
 	color: $body_light;
 	font-size: 115%;
@@ -32,7 +31,8 @@
 	}
 }
 
-.wp-block-pullquote {
+.wp-block-pullquote,
+.wp-block-pullquote-editor {
 	background-color: $color_gray;
 
 	blockquote {
@@ -59,30 +59,36 @@
 }
 
 .wp-block-code,
-.wp-block-preformatted {
+.wp-block-code-editor,
+.wp-block-preformatted,
+.wp-block-preformatted-editor {
 	font-size: 80%;
 }
 
-.wp-block-table {
+.wp-block-table,
+.wp-block-table-editor {
 
 	.wp-element-caption {
 		padding-top: 10px;
 	}
 }
 
-.wp-block-gallery {
+.wp-block-gallery,
+.wp-block-gallery-editor {
 
 	&.has-background {
 		padding: 1rem;
 	}
 }
 
-.wp-block-audio {
+.wp-block-audio,
+.wp-block-audio-editor {
 	background-color: $color_gray;
 	padding: 1.5rem 1.25rem 1rem;
 }
 
-.wp-block-file {
+.wp-block-file,
+.wp-block-file-editor {
 	background-color: $color_gray;
 	padding: 1.5rem;
 	text-align: center;
@@ -92,7 +98,8 @@
 	}
 }
 
-.wp-block-table-of-contents {
+.wp-block-table-of-contents,
+.wp-block-table-of-contents-editor {
 	background-color: $color_gray;
 	font-size: 85%;
 	padding: 2rem;
@@ -135,7 +142,8 @@
 	}
 }
 
-.wp-block-search {
+.wp-block-search,
+.wp-block-search-editor {
 
 	.wp-block-search__inside-wrapper {
 		background-color: $color_gray;
@@ -144,7 +152,8 @@
 	}
 }
 
-.wp-block-preformatted {
+.wp-block-preformatted,
+.wp-block-preformatted-editor {
 	background-color: $color_gray;
 	padding: 1.5rem;
 }

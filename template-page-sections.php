@@ -1,6 +1,6 @@
 <?php
 /**
- * Template Name: Gutenberg
+ * Template Name: Page Sections
  *
  * A blank canvas to be painted in the block editor (Gutenberg).
  */
@@ -11,7 +11,7 @@ while ( have_posts() ) :
 	the_post();
 	?>
 	<div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-		<div class="entry-content">
+		<div class="entry-content page-sections-content">
 			<?php the_content(); ?>
 		</div>
 	</div>

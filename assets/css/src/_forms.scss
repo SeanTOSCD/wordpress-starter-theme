@@ -1,7 +1,7 @@
 .button,
 button,
 input[type="submit"],
-.wp-block-button:not(.has-background) .wp-element-button,
+.wp-block-button__link,
 .wp-block-file__button,
 .wp-block-search__button {
 	background-color: $color_gary_dark;

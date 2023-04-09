@@ -290,7 +290,7 @@
 		}
 
 		#primary-menu {
-			background-color: $background;
+			background-color: #fff;
 			display: flex;
 			flex-direction: column;
 			justify-content: flex-end;
@@ -335,7 +335,7 @@
 					}
 
 					& > .sub-menu {
-						background-color: $background;
+						background-color: #fff;
 						border-bottom: 1px solid $color_gray;
 						display: none;
 						padding: 7px 1rem;

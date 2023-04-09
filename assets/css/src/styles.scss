@@ -15,6 +15,8 @@ Text Domain: wst
 @import "../../../node_modules/bootstrap/scss/bootstrap-utilities";
 @import "../../../node_modules/bootstrap/scss/bootstrap-grid";
 
+@import "_variables";
+
 @import "_mixins";
 @import "_colors";
 
@@ -34,4 +36,5 @@ Text Domain: wst
 @import "_typography";
 
 @import "templates/_front-page";
+@import "templates/_page-sections";
 @import "templates/_wide";

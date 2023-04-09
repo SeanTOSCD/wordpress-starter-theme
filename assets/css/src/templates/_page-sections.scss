@@ -1,0 +1,135 @@
+/**
+ * The Page Sections template
+ */
+.page-template-template-page-sections {
+
+	.page-sections-content {
+
+		/**
+		 * These styles allow you to use core blocks to make page sections. Primarily, you'll
+		 * create these sections using the Group block (basic container, NOT row or stacked).
+		 * When the Group block is a _top-level block_ in this template, the theme will
+		 * automatically apply CSS to the core markup of the block to make it a full-width page
+		 * section with all inner content constrained.
+		 *
+		 * Additional classes can still be added through block editor UI on the element itself.
+		 * Use additional classes to tap into default theme styles. Example: adding the classes
+		 * "page-header large" to the Group block results in:
+		 *
+		 * <div class="wp-block-group page-header large is-layout-constrained">
+		 *
+		 * With that combination block type, classes, and this template, you've re-created the
+		 * page-header seen throughout the theme, but on your custom page right in the editor.
+		 *
+		 * The CSS below represents a merger of Bootstrap's ".container" styles and this theme's
+		 * native ".inner" class.
+		 */
+		& > [class*="wp-block-"] {
+
+			& > [class*="__inner-container"] {
+				@include block-page-section-inner-container;
+			}
+
+			&.tiny {
+
+				& > [class*="__inner-container"] {
+					@include block-page-section-inner-container__tiny;
+				}
+			}
+
+			&.small {
+
+				& > [class*="__inner-container"] {
+					@include block-page-section-inner-container__small;
+				}
+			}
+
+			&.medium {
+
+				& > [class*="__inner-container"] {
+					@include block-page-section-inner-container__medium;
+				}
+			}
+
+			&.large {
+
+				& > [class*="__inner-container"] {
+					@include block-page-section-inner-container__large;
+				}
+			}
+
+			&.huge {
+
+				& > [class*="__inner-container"] {
+					@include block-page-section-inner-container__huge;
+				}
+			}
+
+			&.no-spacing {
+
+				& > [class*="__inner-container"] {
+					@include block-page-section-inner-container__no-spacing;
+				}
+			}
+		}
+
+		/**
+		 * Group Block
+		 */
+		& > .wp-block-group {
+
+			&.is-layout-constrained {
+
+				&.page-header {
+					text-align: center;
+
+					& > .wp-block-group__inner-container {
+
+						& > h1:first-child,
+						& > h2:first-child,
+						& > h3:first-child {
+							margin-bottom: .75rem;
+						}
+
+						& > p {
+							margin: 0 auto;
+							max-width: 768px;
+
+							@media all and (min-width: 768px) {
+								font-size: 21px;
+							}
+						}
+
+						.wp-block-buttons {
+
+							&:last-child {
+								margin-top: 2rem;
+
+								@media all and (min-width: 768px) {
+									margin-top: 3rem;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+
+		.wp-block-columns {
+
+			&:last-child {
+				margin-bottom: 0;
+			}
+		}
+
+		.wp-block-media-text {
+
+			.wp-block-media-text__media {
+
+				@media all and (max-width: 615px) {
+					margin-bottom: 1.5rem;
+				}
+			}
+		}
+	}
+}

@@ -1,16 +1,134 @@
+// Normalize the editor too
 @import "../../../node_modules/bootstrap/scss/bootstrap-reboot";
-@import "_colors";
-@import "_mixins";
-@import "_typography";
-@import "_blocks";
-@import "_forms";
 
+// Make Sass variables available for editor stylesheets
+@import "_variables";
+
+// Make Sass mixins available for editor stylesheets
+@import "_mixins";
+
+// Keep front-end styles consistent in editor
+@import "_typography";
+@import "_forms";
+@import "_blocks";
+
+/**
+ * These styles are applied to the editor, separate from front-end styles.
+ */
 body {
 
 	* {
 		box-sizing: border-box;
 	}
 
+	/* The post title - let's visually separate it from the post_content */
+	.edit-post-visual-editor__post-title-wrapper {
+		border-bottom: 1px solid $color_gray;
+		margin-bottom: 2rem;
+		padding-bottom: 3rem;
+
+		h1 {
+			font-size: 2rem;
+		}
+	}
+
+	/* All user-generated post_content */
+	.wp-block-post-content {
+
+		/* Top-level blocks in the post content */
+		& > [class*="wp-block-"] {
+
+			/* Layout related top-level blocks get Bootstrap .container styles */
+			& > [class*="__inner-container"] {
+				@include block-page-section-inner-container;
+			}
+
+			/**
+			 * Vertical padding header classes top-level blocks
+			 */
+			&.tiny {
+
+				& > [class*="__inner-container"] {
+					@include block-page-section-inner-container__tiny;
+				}
+			}
+			&.small {
+
+				& > [class*="__inner-container"] {
+					@include block-page-section-inner-container__small;
+				}
+			}
+			&.medium {
+
+				& > [class*="__inner-container"] {
+					@include block-page-section-inner-container__medium;
+				}
+			}
+			&.large {
+
+				& > [class*="__inner-container"] {
+					@include block-page-section-inner-container__large;
+				}
+			}
+			&.huge {
+
+				& > [class*="__inner-container"] {
+					@include block-page-section-inner-container__huge;
+				}
+			}
+			&.no-spacing {
+
+				& > [class*="__inner-container"] {
+					@include block-page-section-inner-container__no-spacing;
+				}
+			}
+		}
+	}
+
+	/* Core block: Group */
+	.wp-block-group {
+
+		&.is-layout-constrained {
+
+			/* Group type: page-header */
+			&.page-header {
+
+				& > .wp-block-group__inner-container {
+
+					.wp-block-buttons {
+
+						&:last-child {
+							margin-bottom: 0;
+							margin-top: 1rem;
+
+							@media all and (min-width: 768px) {
+								margin-top: 2rem;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+	/* Core block: button */
+	.wp-element-button,
+	.wp-block-button__link,
+	.wp-block-buttons .wp-block-button .wp-element-button {
+		border-radius: 0;
+	}
+
+	/* Core block: search */
+	.wp-block-search {
+
+		.wp-block-search__input {
+			width: unset;
+		}
+	}
+
+	/**
+	 * Markup & formatting tweaks
+	 */
 	h1, .h1,
 	h2, .h2,
 	h3, .h3,
@@ -18,19 +136,5 @@ body {
 	h5, .h5,
 	h6, .h6 {
 		font-weight: 700;
-	}
-
-	@include heading_font_reduced;
-
-	.wp-element-button,
-	.wp-block-buttons .wp-block-button .wp-element-button {
-		border-radius: 0;
-	}
-
-	.wp-block-search {
-
-		.wp-block-search__input {
-			width: unset;
-		}
 	}
 }

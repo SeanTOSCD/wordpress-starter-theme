@@ -114,6 +114,7 @@ function wst_scripts() {
 add_action( 'wp_enqueue_scripts', 'wst_scripts' );
 
 // Theme functions
+require THEME_INCLUDES . '/gutenberg.php';
 require THEME_INCLUDES . '/template-functions.php';
 require THEME_INCLUDES . '/template-tags.php';
 

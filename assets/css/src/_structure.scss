@@ -54,4 +54,35 @@ body {
 			padding-top: 4rem;
 		}
 	}
+
+	&.large {
+
+		@media all and (min-width: 1400px) {
+			padding-bottom: 7rem;
+			padding-top: 7rem;
+		}
+	}
+
+	&.huge {
+
+		@media all and (min-width: 768px) {
+			padding-bottom: 4rem;
+			padding-top: 4rem;
+		}
+
+		@media all and (min-width: 992px) {
+			padding-bottom: 5rem;
+			padding-top: 5rem;
+		}
+
+		@media all and (min-width: 1200px) {
+			padding-bottom: 7rem;
+			padding-top: 7rem;
+		}
+
+		@media all and (min-width: 1400px) {
+			padding-bottom: 9rem;
+			padding-top: 9rem;
+		}
+	}
 }

@@ -15,6 +15,9 @@ h6, .h6,
 
 h1, .h1,
 .page-title,
+.page-header.wp-block-group > .wp-block-group__inner-container > h1:first-child,
+.page-header.wp-block-group > .wp-block-group__inner-container > h2:first-child,
+.page-header.wp-block-group > .wp-block-group__inner-container > h3:first-child,
 .archive .page-title span {
 	font-size: 2rem;
 
@@ -210,10 +213,10 @@ table {
 }
 
 // Adjustments to markup in standard WordPress content areas (so, not custom)
-.entry-content,
+.entry-content:not(.page-sections-content),
 .comment-content {
 
-	@include heading_font_reduced;
+	@include heading-font-reduced;
 
 	& > [class*="wp-block-"] {
 		margin-bottom: 1.25rem;
