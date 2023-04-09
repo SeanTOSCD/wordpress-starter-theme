@@ -8421,7 +8421,7 @@ input[type="submit"],
 .wp-block-file__button,
 .wp-block-search__button {
   background-color: #222;
-  border: 2px solid #222;
+  border: 0;
   border-radius: 0;
   color: #fff;
   display: inline-block;
@@ -8446,7 +8446,6 @@ input[type="submit"],
   .wp-block-search__button:focus,
   .wp-block-search__button:hover {
     background-color: #3c3c3c;
-    border-color: #3c3c3c;
     color: #fff;
     cursor: pointer; }
   .button.outline,
@@ -8474,12 +8473,12 @@ input[type="submit"],
     .wp-block-search__button.outline:focus,
     .wp-block-search__button.outline:hover {
       background-color: #222;
-      border-color: #222;
       color: #fff;
       cursor: pointer; }
 
 .wp-block-button.is-style-outline .wp-element-button {
   background-color: transparent;
+  border: 0;
   color: #222; }
   .wp-block-button.is-style-outline .wp-element-button:active, .wp-block-button.is-style-outline .wp-element-button:focus, .wp-block-button.is-style-outline .wp-element-button:hover {
     background-color: #222;
@@ -8495,27 +8494,12 @@ input[type="search"],
 input[type="password"],
 textarea,
 select {
-  border: 2px solid #222;
+  border: 0;
   border-radius: 0;
+  box-shadow: 0 0 0 2px inset #222;
   box-sizing: border-box;
   padding: .53em;
   width: 100%; }
-  input[type="text"]:active, input[type="text"]:focus,
-  input[type="email"]:active,
-  input[type="email"]:focus,
-  input[type="url"]:active,
-  input[type="url"]:focus,
-  input[type="text"]:active,
-  input[type="text"]:focus,
-  input[type="search"]:active,
-  input[type="search"]:focus,
-  input[type="password"]:active,
-  input[type="password"]:focus,
-  textarea:active,
-  textarea:focus,
-  select:active,
-  select:focus {
-    border-color: blue; }
 
 .grid-item .entry-header .post-thumbnail {
   display: block;
@@ -8999,6 +8983,174 @@ table {
   .comment-content > [class*="wp-block-"]:last-child {
     margin-bottom: 0; }
 
+/**
+ * Shared Page Sections styles
+ */
+.page-template-template-page-sections,
+.page-front {
+  /* Only the above templates have this class */ }
+  .page-template-template-page-sections .page-sections-content,
+  .page-front .page-sections-content {
+    /**
+     * These styles allow you to use core blocks to make page sections. Primarily, you'll
+     * create these sections using the Group block (basic container, NOT row or stacked).
+     * When the Group block is a _top-level block_ in this template, the theme will
+     * automatically apply CSS to the core markup of the block to make it a full-width page
+     * section with all inner content constrained.
+     *
+     * Additional classes can still be added through block editor UI on the element itself.
+     * Use additional classes to tap into default theme styles. Example: adding the classes
+     * "page-header large" to the Group block results in:
+     *
+     * <div class="wp-block-group page-header large is-layout-constrained">
+     *
+     * With that combination block type, classes, and this template, you've re-created the
+     * page-header seen throughout the theme, but on your custom page right in the editor.
+     *
+     * The CSS below represents a merger of Bootstrap's ".container" styles and this theme's
+     * native ".inner" class.
+     */
+    /**
+     * Group Block
+     */ }
+    .page-template-template-page-sections .page-sections-content > [class*="wp-block-"] > [class*="__inner-container"],
+    .page-front .page-sections-content > [class*="wp-block-"] > [class*="__inner-container"] {
+      padding: 3rem .75rem;
+      margin: 0 auto;
+      width: 100%; }
+      @media all and (min-width: 576px) {
+        .page-template-template-page-sections .page-sections-content > [class*="wp-block-"] > [class*="__inner-container"],
+        .page-front .page-sections-content > [class*="wp-block-"] > [class*="__inner-container"] {
+          max-width: 540px; } }
+      @media all and (min-width: 768px) {
+        .page-template-template-page-sections .page-sections-content > [class*="wp-block-"] > [class*="__inner-container"],
+        .page-front .page-sections-content > [class*="wp-block-"] > [class*="__inner-container"] {
+          max-width: 720px; } }
+      @media all and (min-width: 992px) {
+        .page-template-template-page-sections .page-sections-content > [class*="wp-block-"] > [class*="__inner-container"],
+        .page-front .page-sections-content > [class*="wp-block-"] > [class*="__inner-container"] {
+          max-width: 960px;
+          padding-bottom: 4rem;
+          padding-top: 4rem; } }
+      @media all and (min-width: 1200px) {
+        .page-template-template-page-sections .page-sections-content > [class*="wp-block-"] > [class*="__inner-container"],
+        .page-front .page-sections-content > [class*="wp-block-"] > [class*="__inner-container"] {
+          max-width: 1140px;
+          padding-bottom: 5rem;
+          padding-top: 5rem; } }
+      @media all and (min-width: 1400px) {
+        .page-template-template-page-sections .page-sections-content > [class*="wp-block-"] > [class*="__inner-container"],
+        .page-front .page-sections-content > [class*="wp-block-"] > [class*="__inner-container"] {
+          max-width: 1320px; } }
+    .page-template-template-page-sections .page-sections-content > [class*="wp-block-"].tiny > [class*="__inner-container"],
+    .page-front .page-sections-content > [class*="wp-block-"].tiny > [class*="__inner-container"] {
+      padding-bottom: 1.5rem;
+      padding-top: 1.5rem; }
+      @media all and (min-width: 992px) {
+        .page-template-template-page-sections .page-sections-content > [class*="wp-block-"].tiny > [class*="__inner-container"],
+        .page-front .page-sections-content > [class*="wp-block-"].tiny > [class*="__inner-container"] {
+          padding-bottom: 1.5rem;
+          padding-top: 1.5rem; } }
+      @media all and (min-width: 1200px) {
+        .page-template-template-page-sections .page-sections-content > [class*="wp-block-"].tiny > [class*="__inner-container"],
+        .page-front .page-sections-content > [class*="wp-block-"].tiny > [class*="__inner-container"] {
+          padding-bottom: 1.5rem;
+          padding-top: 1.5rem; } }
+    @media all and (min-width: 992px) {
+      .page-template-template-page-sections .page-sections-content > [class*="wp-block-"].small > [class*="__inner-container"],
+      .page-front .page-sections-content > [class*="wp-block-"].small > [class*="__inner-container"] {
+        padding-bottom: 3rem;
+        padding-top: 3rem; } }
+    @media all and (min-width: 1200px) {
+      .page-template-template-page-sections .page-sections-content > [class*="wp-block-"].small > [class*="__inner-container"],
+      .page-front .page-sections-content > [class*="wp-block-"].small > [class*="__inner-container"] {
+        padding-bottom: 3rem;
+        padding-top: 3rem; } }
+    @media all and (min-width: 1200px) {
+      .page-template-template-page-sections .page-sections-content > [class*="wp-block-"].medium > [class*="__inner-container"],
+      .page-front .page-sections-content > [class*="wp-block-"].medium > [class*="__inner-container"] {
+        padding-bottom: 4rem;
+        padding-top: 4rem; } }
+    @media all and (min-width: 1400px) {
+      .page-template-template-page-sections .page-sections-content > [class*="wp-block-"].large > [class*="__inner-container"],
+      .page-front .page-sections-content > [class*="wp-block-"].large > [class*="__inner-container"] {
+        padding-bottom: 7rem;
+        padding-top: 7rem; } }
+    @media all and (min-width: 768px) {
+      .page-template-template-page-sections .page-sections-content > [class*="wp-block-"].huge > [class*="__inner-container"],
+      .page-front .page-sections-content > [class*="wp-block-"].huge > [class*="__inner-container"] {
+        padding-bottom: 4rem;
+        padding-top: 4rem; } }
+    @media all and (min-width: 992px) {
+      .page-template-template-page-sections .page-sections-content > [class*="wp-block-"].huge > [class*="__inner-container"],
+      .page-front .page-sections-content > [class*="wp-block-"].huge > [class*="__inner-container"] {
+        padding-bottom: 5rem;
+        padding-top: 5rem; } }
+    @media all and (min-width: 1200px) {
+      .page-template-template-page-sections .page-sections-content > [class*="wp-block-"].huge > [class*="__inner-container"],
+      .page-front .page-sections-content > [class*="wp-block-"].huge > [class*="__inner-container"] {
+        padding-bottom: 7rem;
+        padding-top: 7rem; } }
+    @media all and (min-width: 1400px) {
+      .page-template-template-page-sections .page-sections-content > [class*="wp-block-"].huge > [class*="__inner-container"],
+      .page-front .page-sections-content > [class*="wp-block-"].huge > [class*="__inner-container"] {
+        padding-bottom: 9rem;
+        padding-top: 9rem; } }
+    .page-template-template-page-sections .page-sections-content > [class*="wp-block-"].no-spacing > [class*="__inner-container"],
+    .page-front .page-sections-content > [class*="wp-block-"].no-spacing > [class*="__inner-container"] {
+      padding-bottom: 0;
+      padding-top: 0; }
+      @media all and (min-width: 768px) {
+        .page-template-template-page-sections .page-sections-content > [class*="wp-block-"].no-spacing > [class*="__inner-container"],
+        .page-front .page-sections-content > [class*="wp-block-"].no-spacing > [class*="__inner-container"] {
+          padding-bottom: 0;
+          padding-top: 0; } }
+      @media all and (min-width: 992px) {
+        .page-template-template-page-sections .page-sections-content > [class*="wp-block-"].no-spacing > [class*="__inner-container"],
+        .page-front .page-sections-content > [class*="wp-block-"].no-spacing > [class*="__inner-container"] {
+          padding-bottom: 0;
+          padding-top: 0; } }
+      @media all and (min-width: 1200px) {
+        .page-template-template-page-sections .page-sections-content > [class*="wp-block-"].no-spacing > [class*="__inner-container"],
+        .page-front .page-sections-content > [class*="wp-block-"].no-spacing > [class*="__inner-container"] {
+          padding-bottom: 0;
+          padding-top: 0; } }
+      @media all and (min-width: 1400px) {
+        .page-template-template-page-sections .page-sections-content > [class*="wp-block-"].no-spacing > [class*="__inner-container"],
+        .page-front .page-sections-content > [class*="wp-block-"].no-spacing > [class*="__inner-container"] {
+          padding-bottom: 0;
+          padding-top: 0; } }
+    .page-template-template-page-sections .page-sections-content > .wp-block-group.is-layout-constrained.page-header,
+    .page-front .page-sections-content > .wp-block-group.is-layout-constrained.page-header {
+      text-align: center; }
+      .page-template-template-page-sections .page-sections-content > .wp-block-group.is-layout-constrained.page-header > .wp-block-group__inner-container > h1:first-child, .page-template-template-page-sections .page-sections-content > .wp-block-group.is-layout-constrained.page-header > .wp-block-group__inner-container > h2:first-child, .page-template-template-page-sections .page-sections-content > .wp-block-group.is-layout-constrained.page-header > .wp-block-group__inner-container > h3:first-child,
+      .page-front .page-sections-content > .wp-block-group.is-layout-constrained.page-header > .wp-block-group__inner-container > h1:first-child,
+      .page-front .page-sections-content > .wp-block-group.is-layout-constrained.page-header > .wp-block-group__inner-container > h2:first-child,
+      .page-front .page-sections-content > .wp-block-group.is-layout-constrained.page-header > .wp-block-group__inner-container > h3:first-child {
+        margin-bottom: .75rem; }
+      .page-template-template-page-sections .page-sections-content > .wp-block-group.is-layout-constrained.page-header > .wp-block-group__inner-container > p,
+      .page-front .page-sections-content > .wp-block-group.is-layout-constrained.page-header > .wp-block-group__inner-container > p {
+        margin: 0 auto;
+        max-width: 768px; }
+        @media all and (min-width: 768px) {
+          .page-template-template-page-sections .page-sections-content > .wp-block-group.is-layout-constrained.page-header > .wp-block-group__inner-container > p,
+          .page-front .page-sections-content > .wp-block-group.is-layout-constrained.page-header > .wp-block-group__inner-container > p {
+            font-size: 21px; } }
+      .page-template-template-page-sections .page-sections-content > .wp-block-group.is-layout-constrained.page-header > .wp-block-group__inner-container .wp-block-buttons:last-child,
+      .page-front .page-sections-content > .wp-block-group.is-layout-constrained.page-header > .wp-block-group__inner-container .wp-block-buttons:last-child {
+        margin-top: 2rem; }
+        @media all and (min-width: 768px) {
+          .page-template-template-page-sections .page-sections-content > .wp-block-group.is-layout-constrained.page-header > .wp-block-group__inner-container .wp-block-buttons:last-child,
+          .page-front .page-sections-content > .wp-block-group.is-layout-constrained.page-header > .wp-block-group__inner-container .wp-block-buttons:last-child {
+            margin-top: 3rem; } }
+    .page-template-template-page-sections .page-sections-content .wp-block-columns:last-child,
+    .page-front .page-sections-content .wp-block-columns:last-child {
+      margin-bottom: 0; }
+    @media all and (max-width: 615px) {
+      .page-template-template-page-sections .page-sections-content .wp-block-media-text .wp-block-media-text__media,
+      .page-front .page-sections-content .wp-block-media-text .wp-block-media-text__media {
+        margin-bottom: 1.5rem; } }
+
 section[class*="-section"] .section-header {
   margin-bottom: 3rem; }
   @media all and (min-width: 768px) {
@@ -9194,137 +9346,5 @@ body {
   @media all and (min-width: 1400px) {
     body {
       font-size: 19px; } }
-
-/**
- * The Page Sections template
- */
-.page-template-template-page-sections .page-sections-content {
-  /**
-   * These styles allow you to use core blocks to make page sections. Primarily, you'll
-   * create these sections using the Group block (basic container, NOT row or stacked).
-   * When the Group block is a _top-level block_ in this template, the theme will
-   * automatically apply CSS to the core markup of the block to make it a full-width page
-   * section with all inner content constrained.
-   *
-   * Additional classes can still be added through block editor UI on the element itself.
-   * Use additional classes to tap into default theme styles. Example: adding the classes
-   * "page-header large" to the Group block results in:
-   *
-   * <div class="wp-block-group page-header large is-layout-constrained">
-   *
-   * With that combination block type, classes, and this template, you've re-created the
-   * page-header seen throughout the theme, but on your custom page right in the editor.
-   *
-   * The CSS below represents a merger of Bootstrap's ".container" styles and this theme's
-   * native ".inner" class.
-   */
-  /**
-   * Group Block
-   */ }
-  .page-template-template-page-sections .page-sections-content > [class*="wp-block-"] > [class*="__inner-container"] {
-    padding: 3rem .75rem;
-    margin: 0 auto;
-    width: 100%; }
-    @media all and (min-width: 576px) {
-      .page-template-template-page-sections .page-sections-content > [class*="wp-block-"] > [class*="__inner-container"] {
-        max-width: 540px; } }
-    @media all and (min-width: 768px) {
-      .page-template-template-page-sections .page-sections-content > [class*="wp-block-"] > [class*="__inner-container"] {
-        max-width: 720px; } }
-    @media all and (min-width: 992px) {
-      .page-template-template-page-sections .page-sections-content > [class*="wp-block-"] > [class*="__inner-container"] {
-        max-width: 960px;
-        padding-bottom: 4rem;
-        padding-top: 4rem; } }
-    @media all and (min-width: 1200px) {
-      .page-template-template-page-sections .page-sections-content > [class*="wp-block-"] > [class*="__inner-container"] {
-        max-width: 1140px;
-        padding-bottom: 5rem;
-        padding-top: 5rem; } }
-    @media all and (min-width: 1400px) {
-      .page-template-template-page-sections .page-sections-content > [class*="wp-block-"] > [class*="__inner-container"] {
-        max-width: 1320px; } }
-  .page-template-template-page-sections .page-sections-content > [class*="wp-block-"].tiny > [class*="__inner-container"] {
-    padding-bottom: 1.5rem;
-    padding-top: 1.5rem; }
-    @media all and (min-width: 992px) {
-      .page-template-template-page-sections .page-sections-content > [class*="wp-block-"].tiny > [class*="__inner-container"] {
-        padding-bottom: 1.5rem;
-        padding-top: 1.5rem; } }
-    @media all and (min-width: 1200px) {
-      .page-template-template-page-sections .page-sections-content > [class*="wp-block-"].tiny > [class*="__inner-container"] {
-        padding-bottom: 1.5rem;
-        padding-top: 1.5rem; } }
-  @media all and (min-width: 992px) {
-    .page-template-template-page-sections .page-sections-content > [class*="wp-block-"].small > [class*="__inner-container"] {
-      padding-bottom: 3rem;
-      padding-top: 3rem; } }
-  @media all and (min-width: 1200px) {
-    .page-template-template-page-sections .page-sections-content > [class*="wp-block-"].small > [class*="__inner-container"] {
-      padding-bottom: 3rem;
-      padding-top: 3rem; } }
-  @media all and (min-width: 1200px) {
-    .page-template-template-page-sections .page-sections-content > [class*="wp-block-"].medium > [class*="__inner-container"] {
-      padding-bottom: 4rem;
-      padding-top: 4rem; } }
-  @media all and (min-width: 1400px) {
-    .page-template-template-page-sections .page-sections-content > [class*="wp-block-"].large > [class*="__inner-container"] {
-      padding-bottom: 7rem;
-      padding-top: 7rem; } }
-  @media all and (min-width: 768px) {
-    .page-template-template-page-sections .page-sections-content > [class*="wp-block-"].huge > [class*="__inner-container"] {
-      padding-bottom: 4rem;
-      padding-top: 4rem; } }
-  @media all and (min-width: 992px) {
-    .page-template-template-page-sections .page-sections-content > [class*="wp-block-"].huge > [class*="__inner-container"] {
-      padding-bottom: 5rem;
-      padding-top: 5rem; } }
-  @media all and (min-width: 1200px) {
-    .page-template-template-page-sections .page-sections-content > [class*="wp-block-"].huge > [class*="__inner-container"] {
-      padding-bottom: 7rem;
-      padding-top: 7rem; } }
-  @media all and (min-width: 1400px) {
-    .page-template-template-page-sections .page-sections-content > [class*="wp-block-"].huge > [class*="__inner-container"] {
-      padding-bottom: 9rem;
-      padding-top: 9rem; } }
-  .page-template-template-page-sections .page-sections-content > [class*="wp-block-"].no-spacing > [class*="__inner-container"] {
-    padding-bottom: 0;
-    padding-top: 0; }
-    @media all and (min-width: 768px) {
-      .page-template-template-page-sections .page-sections-content > [class*="wp-block-"].no-spacing > [class*="__inner-container"] {
-        padding-bottom: 0;
-        padding-top: 0; } }
-    @media all and (min-width: 992px) {
-      .page-template-template-page-sections .page-sections-content > [class*="wp-block-"].no-spacing > [class*="__inner-container"] {
-        padding-bottom: 0;
-        padding-top: 0; } }
-    @media all and (min-width: 1200px) {
-      .page-template-template-page-sections .page-sections-content > [class*="wp-block-"].no-spacing > [class*="__inner-container"] {
-        padding-bottom: 0;
-        padding-top: 0; } }
-    @media all and (min-width: 1400px) {
-      .page-template-template-page-sections .page-sections-content > [class*="wp-block-"].no-spacing > [class*="__inner-container"] {
-        padding-bottom: 0;
-        padding-top: 0; } }
-  .page-template-template-page-sections .page-sections-content > .wp-block-group.is-layout-constrained.page-header {
-    text-align: center; }
-    .page-template-template-page-sections .page-sections-content > .wp-block-group.is-layout-constrained.page-header > .wp-block-group__inner-container > h1:first-child, .page-template-template-page-sections .page-sections-content > .wp-block-group.is-layout-constrained.page-header > .wp-block-group__inner-container > h2:first-child, .page-template-template-page-sections .page-sections-content > .wp-block-group.is-layout-constrained.page-header > .wp-block-group__inner-container > h3:first-child {
-      margin-bottom: .75rem; }
-    .page-template-template-page-sections .page-sections-content > .wp-block-group.is-layout-constrained.page-header > .wp-block-group__inner-container > p {
-      margin: 0 auto;
-      max-width: 768px; }
-      @media all and (min-width: 768px) {
-        .page-template-template-page-sections .page-sections-content > .wp-block-group.is-layout-constrained.page-header > .wp-block-group__inner-container > p {
-          font-size: 21px; } }
-    .page-template-template-page-sections .page-sections-content > .wp-block-group.is-layout-constrained.page-header > .wp-block-group__inner-container .wp-block-buttons:last-child {
-      margin-top: 2rem; }
-      @media all and (min-width: 768px) {
-        .page-template-template-page-sections .page-sections-content > .wp-block-group.is-layout-constrained.page-header > .wp-block-group__inner-container .wp-block-buttons:last-child {
-          margin-top: 3rem; } }
-  .page-template-template-page-sections .page-sections-content .wp-block-columns:last-child {
-    margin-bottom: 0; }
-  @media all and (max-width: 615px) {
-    .page-template-template-page-sections .page-sections-content .wp-block-media-text .wp-block-media-text__media {
-      margin-bottom: 1.5rem; } }
 
 /*# sourceMappingURL=style.css.map */

@@ -416,7 +416,7 @@ input[type="submit"],
 .wp-block-file__button,
 .wp-block-search__button {
   background-color: #222;
-  border: 2px solid #222;
+  border: 0;
   border-radius: 0;
   color: #fff;
   display: inline-block;
@@ -441,7 +441,6 @@ input[type="submit"],
   .wp-block-search__button:focus,
   .wp-block-search__button:hover {
     background-color: #3c3c3c;
-    border-color: #3c3c3c;
     color: #fff;
     cursor: pointer; }
   .button.outline,
@@ -469,12 +468,12 @@ input[type="submit"],
     .wp-block-search__button.outline:focus,
     .wp-block-search__button.outline:hover {
       background-color: #222;
-      border-color: #222;
       color: #fff;
       cursor: pointer; }
 
 .wp-block-button.is-style-outline .wp-element-button {
   background-color: transparent;
+  border: 0;
   color: #222; }
   .wp-block-button.is-style-outline .wp-element-button:active, .wp-block-button.is-style-outline .wp-element-button:focus, .wp-block-button.is-style-outline .wp-element-button:hover {
     background-color: #222;
@@ -490,27 +489,12 @@ input[type="search"],
 input[type="password"],
 textarea,
 select {
-  border: 2px solid #222;
+  border: 0;
   border-radius: 0;
+  box-shadow: 0 0 0 2px inset #222;
   box-sizing: border-box;
   padding: .53em;
   width: 100%; }
-  input[type="text"]:active, input[type="text"]:focus,
-  input[type="email"]:active,
-  input[type="email"]:focus,
-  input[type="url"]:active,
-  input[type="url"]:focus,
-  input[type="text"]:active,
-  input[type="text"]:focus,
-  input[type="search"]:active,
-  input[type="search"]:focus,
-  input[type="password"]:active,
-  input[type="password"]:focus,
-  textarea:active,
-  textarea:focus,
-  select:active,
-  select:focus {
-    border-color: blue; }
 
 /**
  * Core block styles - both front-end and editor
@@ -640,7 +624,6 @@ body {
   /* The post title - let's visually separate it from the post_content */
   /* All user-generated post_content */
   /* Core block: Group */
-  /* Core block: button */
   /* Core block: search */
   /**
    * Markup & formatting tweaks
@@ -753,10 +736,6 @@ body {
       @media all and (min-width: 768px) {
         body .wp-block-group.is-layout-constrained.page-header > .wp-block-group__inner-container .wp-block-buttons:last-child {
           margin-top: 2rem; } }
-  body .wp-element-button,
-  body .wp-block-button__link,
-  body .wp-block-buttons .wp-block-button .wp-element-button {
-    border-radius: 0; }
   body .wp-block-search .wp-block-search__input {
     width: unset; }
   body h1, body .h1,

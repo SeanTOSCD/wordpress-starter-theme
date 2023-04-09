@@ -5,7 +5,7 @@ input[type="submit"],
 .wp-block-file__button,
 .wp-block-search__button {
 	background-color: $color_gary_dark;
-	border: 2px solid $color_gary_dark;
+	border: 0;
 	border-radius: 0;
 	color: #fff;
 	display: inline-block;
@@ -18,7 +18,6 @@ input[type="submit"],
 	&:focus,
 	&:hover {
 		background-color: lighten( $color_gary_dark, 10% );
-		border-color: lighten( $color_gary_dark, 10% );
 		color: #fff;
 		cursor: pointer;
 	}
@@ -31,7 +30,6 @@ input[type="submit"],
 		&:focus,
 		&:hover {
 			background-color: $color_gary_dark;
-			border-color: $color_gary_dark;
 			color: #fff;
 			cursor: pointer;
 		}
@@ -44,6 +42,7 @@ input[type="submit"],
 
 		.wp-element-button {
 			background-color: transparent;
+			border: 0;
 			color: $color_gary_dark;
 
 			&:active,
@@ -66,14 +65,10 @@ input[type="search"],
 input[type="password"],
 textarea,
 select {
-	border: 2px solid $color_gary_dark;
+	border: 0;
 	border-radius: 0;
+	box-shadow: 0 0 0 2px inset $color_gary_dark;
 	box-sizing: border-box;
 	padding: .53em;
 	width: 100%;
-
-	&:active,
-	&:focus {
-		border-color: $color_primary;
-	}
 }
