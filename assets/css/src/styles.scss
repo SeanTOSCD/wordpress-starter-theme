@@ -15,11 +15,11 @@ Text Domain: wst
 @import "../../../node_modules/bootstrap/scss/bootstrap-utilities";
 @import "../../../node_modules/bootstrap/scss/bootstrap-grid";
 
+/* Must be included before other styles */
 @import "_variables";
-
 @import "_mixins";
-@import "_colors";
 
+/* Global styles */
 @import "_archive";
 @import "_blocks";
 @import "_comments";
@@ -36,4 +36,8 @@ Text Domain: wst
 @import "_structure";
 @import "_typography";
 
+/* Make sure final color adjustments come last */
+@import "_colors";
+
+/* Template styles */
 @import "templates/_wide";

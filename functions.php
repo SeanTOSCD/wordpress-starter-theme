@@ -113,6 +113,17 @@ function wst_scripts() {
 }
 add_action( 'wp_enqueue_scripts', 'wst_scripts' );
 
+/**
+ * Remove classic theme styles
+ *
+ * @return void
+ */
+function disable_classic_theme_styles() {
+	wp_deregister_style( 'classic-theme-styles' );
+	wp_dequeue_style( 'classic-theme-styles' );
+}
+add_filter('wp_enqueue_scripts', 'disable_classic_theme_styles', 100);
+
 // Theme functions
 require THEME_INCLUDES . '/gutenberg.php';
 require THEME_INCLUDES . '/template-functions.php';
