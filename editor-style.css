@@ -415,7 +415,6 @@ input[type="submit"],
 .wp-block-button__link,
 .wp-block-file__button,
 .wp-block-search__button {
-  background-color: #222;
   border: 0;
   border-radius: 0;
   color: #fff;
@@ -440,13 +439,41 @@ input[type="submit"],
   .wp-block-search__button:active,
   .wp-block-search__button:focus,
   .wp-block-search__button:hover {
-    background-color: #3c3c3c;
     color: #fff;
-    cursor: pointer; }
+    cursor: pointer;
+    opacity: .8; }
   .button.outline,
   button.outline,
   input[type="submit"].outline,
   .wp-block-button__link.outline,
+  .wp-block-file__button.outline,
+  .wp-block-search__button.outline {
+    background-color: transparent; }
+
+.button,
+button,
+input[type="submit"],
+.wp-block-file__button,
+.wp-block-search__button {
+  background-color: #222;
+  color: #fff; }
+  .button:active, .button:focus, .button:hover,
+  button:active,
+  button:focus,
+  button:hover,
+  input[type="submit"]:active,
+  input[type="submit"]:focus,
+  input[type="submit"]:hover,
+  .wp-block-file__button:active,
+  .wp-block-file__button:focus,
+  .wp-block-file__button:hover,
+  .wp-block-search__button:active,
+  .wp-block-search__button:focus,
+  .wp-block-search__button:hover {
+    color: #fff; }
+  .button.outline,
+  button.outline,
+  input[type="submit"].outline,
   .wp-block-file__button.outline,
   .wp-block-search__button.outline {
     background-color: transparent;
@@ -458,9 +485,6 @@ input[type="submit"],
     input[type="submit"].outline:active,
     input[type="submit"].outline:focus,
     input[type="submit"].outline:hover,
-    .wp-block-button__link.outline:active,
-    .wp-block-button__link.outline:focus,
-    .wp-block-button__link.outline:hover,
     .wp-block-file__button.outline:active,
     .wp-block-file__button.outline:focus,
     .wp-block-file__button.outline:hover,
@@ -468,18 +492,7 @@ input[type="submit"],
     .wp-block-search__button.outline:focus,
     .wp-block-search__button.outline:hover {
       background-color: #222;
-      color: #fff;
-      cursor: pointer; }
-
-.wp-block-button.is-style-outline .wp-element-button {
-  background-color: transparent;
-  border: 0;
-  color: #222; }
-  .wp-block-button.is-style-outline .wp-element-button:active, .wp-block-button.is-style-outline .wp-element-button:focus, .wp-block-button.is-style-outline .wp-element-button:hover {
-    background-color: #222;
-    border-color: #222;
-    color: #fff;
-    cursor: pointer; }
+      color: #fff; }
 
 input[type="text"],
 input[type="email"],
@@ -624,7 +637,8 @@ body {
   /* The post title - let's visually separate it from the post_content */
   /* All user-generated post_content */
   /* Core block: Group */
-  /* Core block: search */
+  /* Core block: Search */
+  /* Core block: Button */
   /**
    * Markup & formatting tweaks
    */ }
@@ -738,6 +752,8 @@ body {
           margin-top: 2rem; } }
   body .wp-block-search .wp-block-search__input {
     width: unset; }
+  body .wp-block-button .wp-block-button__link {
+    border-radius: 0; }
   body h1, body .h1,
   body h2, body .h2,
   body h3, body .h3,

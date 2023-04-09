@@ -4,7 +4,6 @@ input[type="submit"],
 .wp-block-button__link,
 .wp-block-file__button,
 .wp-block-search__button {
-	background-color: $color_gary_dark;
 	border: 0;
 	border-radius: 0;
 	color: #fff;
@@ -17,42 +16,39 @@ input[type="submit"],
 	&:active,
 	&:focus,
 	&:hover {
-		background-color: lighten( $color_gary_dark, 10% );
 		color: #fff;
 		cursor: pointer;
+		opacity: .8;
 	}
 
 	&.outline {
 		background-color: transparent;
-		color: $color_gary_dark;
+	}
+}
+
+.button,
+button,
+input[type="submit"],
+.wp-block-file__button,
+.wp-block-search__button {
+	background-color: $color_gary_dark;
+	color: #fff;
+
+	&:active,
+	&:focus,
+	&:hover {
+		color: #fff;
+	}
+
+	&.outline {
+		background-color: transparent;
+		color: $body;
 
 		&:active,
 		&:focus,
 		&:hover {
-			background-color: $color_gary_dark;
+			background-color: $body;
 			color: #fff;
-			cursor: pointer;
-		}
-	}
-}
-
-.wp-block-button {
-
-	&.is-style-outline {
-
-		.wp-element-button {
-			background-color: transparent;
-			border: 0;
-			color: $color_gary_dark;
-
-			&:active,
-			&:focus,
-			&:hover {
-				background-color: $color_gary_dark;
-				border-color: $color_gary_dark;
-				color: #fff;
-				cursor: pointer;
-			}
 		}
 	}
 }

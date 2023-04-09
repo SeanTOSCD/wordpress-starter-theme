@@ -111,11 +111,19 @@ body {
 		}
 	}
 
-	/* Core block: search */
+	/* Core block: Search */
 	.wp-block-search {
 
 		.wp-block-search__input {
 			width: unset;
+		}
+	}
+
+	/* Core block: Button */
+	.wp-block-button {
+
+		.wp-block-button__link {
+			border-radius: 0;
 		}
 	}
 
