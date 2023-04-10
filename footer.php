@@ -13,6 +13,9 @@
                 <div class="site-info">
                     <?php $home_link = '<a href="' . esc_url( home_url( '/' ) ) . '" rel="home">' . esc_html( get_bloginfo( 'name' ) ) . '</a>'; ?>
                     <span class="site-copyright"><?php echo '&copy ' . $home_link . ' ' . date( 'Y' ); ?></span>
+                    <?php if ( ! empty( get_bloginfo( 'description' ) ) ) { ?>
+                        <span class="site-description"> - <?php echo get_bloginfo( 'description' ); ?></span>
+                    <?php } ?>
                 </div>
             </div>
         </div>

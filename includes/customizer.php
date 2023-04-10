@@ -14,7 +14,7 @@ function wst_customize_register( $wp_customize ) {
      */
 	$wp_customize->add_section( 'wst_colors', array(
 		'title'       => __( 'Theme Colors', 'wst' ),
-		'description' => __( 'Configure theme colors.', 'wst' ),
+		'description' => __( "These colors are available in the Block Editor. For custom CSS, use the CSS variables displayed above each color picker.", 'wst' ),
 	) );
 
 	$wp_customize->add_setting(
@@ -32,6 +32,7 @@ function wst_customize_register( $wp_customize ) {
 			'body_color',
 			array(
 				'label'   => __( 'Body Text Color', 'wst' ),
+                'description' => __( 'This is the default color for body text. Also used for subdued links and other elements.', 'wst' ) . '<small><strong><br>CSS variable: var(--body)</strong></small>',
 				'section' => 'wst_colors',
 			)
 		)
@@ -52,6 +53,7 @@ function wst_customize_register( $wp_customize ) {
 			'subdued_body_color',
 			array(
 				'label'   => __( 'Body Text Color - Subdued', 'wst' ),
+				'description' => __( 'Typically the same hue as Body Text, but slightly lighter. Primarily used for subtitles.', 'wst' ) . '<small><strong><br>CSS variable: var(--subdued-body)</strong></small>',
 				'section' => 'wst_colors',
 			)
 		)
@@ -72,6 +74,7 @@ function wst_customize_register( $wp_customize ) {
 			'lightest_color',
 			array(
 				'label'   => __( 'Lightest Color', 'wst' ),
+				'description' => __( "<strong>Extremely</strong> light, very close to white. Used for backgrounds that shouldn't be white, but are still very light.", 'wst' ) . '<small><strong><br>CSS variable: var(--lightest)</strong></small>',
 				'section' => 'wst_colors',
 			)
 		)
@@ -92,6 +95,7 @@ function wst_customize_register( $wp_customize ) {
 			'darkest_color',
 			array(
 				'label'   => __( 'Darkest Color', 'wst' ),
+				'description' => __( "<strong>Extremely</strong> dark, similar to (or same as) Body Text. Used for backgrounds and other contrasting elements.", 'wst' ) . '<small><strong><br>CSS variable: var(--darkest)</strong></small>',
 				'section' => 'wst_colors',
 			)
 		)
@@ -112,26 +116,7 @@ function wst_customize_register( $wp_customize ) {
 			'action_color',
 			array(
 				'label'   => __( 'Action Color', 'wst' ),
-				'section' => 'wst_colors',
-			)
-		)
-	);
-
-	$wp_customize->add_setting(
-		'subdued_action_color',
-		array(
-			'default'           => '#666666',
-			'sanitize_callback' => 'sanitize_hex_color',
-			'transport'         => 'postMessage',
-		)
-	);
-
-	$wp_customize->add_control(
-		new WP_Customize_Color_Control(
-			$wp_customize,
-			'subdued_action_color',
-			array(
-				'label'   => __( 'Action Color - Subdued', 'wst' ),
+				'description' => __( 'Buttons, links, and other action-oriented elements. Used sparingly for calls to action.', 'wst' ) . '<small><strong><br>CSS variable: var(--action)</strong></small>',
 				'section' => 'wst_colors',
 			)
 		)
@@ -141,6 +126,8 @@ add_action( 'customize_register', 'wst_customize_register' );
 
 /**
  * Add color scheme CSS variables to front-end <head>
+ *
+ * These styles available in the Block Editor for customization, but are not used as default Block Editor styles.
  */
 function wst_customizer_head_styles() {
 	?>
@@ -148,12 +135,10 @@ function wst_customizer_head_styles() {
 		:root{
 			--body: <?php echo get_theme_mod( 'body_color', '#222222' ); ?>;
 			--subdued-body: <?php echo get_theme_mod( 'subdued_body_color', '#555555' ); ?>;
-
             --lightest: <?php echo get_theme_mod( 'lightest_color', '#f5f5f5' ); ?>;
             --darkest: <?php echo get_theme_mod( 'darkest_color', '#222222' ); ?>;
-
             --action: <?php echo get_theme_mod( 'action_color', '#0073aa' ); ?>;
-            --subdued-action: <?php echo get_theme_mod( 'subdued_action_color', '#666666' ); ?>;
+            --subdued-action: <?php echo get_theme_mod( 'body_color', '#222222' ); ?>;
 		}
     </style>
 	<?php

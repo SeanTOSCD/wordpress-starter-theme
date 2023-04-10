@@ -398,6 +398,14 @@ progress {
 [hidden] {
   display: none !important; }
 
+:root {
+  --body: #222222;
+  --subdued-body: #555555;
+  --lightest: #f5f5f5;
+  --darkest: #222222;
+  --action: #0073aa;
+  --subdued-action: #222222; }
+
 /**
  * Feel free to configure your own Sass variables here.
  *
@@ -448,13 +456,6 @@ body {
 
 .has-action-background-color {
   background-color: var(--action); }
-
-/* Action - Subdued */
-.has-subdued-action-color {
-  color: var(--subdued-action); }
-
-.has-subdued-action-background-color {
-  background-color: var(--subdued-action); }
 
 body {
   font-size: 17px;
@@ -553,10 +554,27 @@ textarea,
 select {
   border: 0;
   border-radius: 0;
-  box-shadow: 0 0 0 2px inset var(--body);
+  box-shadow: 0 0 0 2px inset var(--subdued-body);
   box-sizing: border-box;
   padding: .53em;
   width: 100%; }
+  input[type="text"]:active, input[type="text"]:focus,
+  input[type="email"]:active,
+  input[type="email"]:focus,
+  input[type="url"]:active,
+  input[type="url"]:focus,
+  input[type="text"]:active,
+  input[type="text"]:focus,
+  input[type="search"]:active,
+  input[type="search"]:focus,
+  input[type="password"]:active,
+  input[type="password"]:focus,
+  textarea:active,
+  textarea:focus,
+  select:active,
+  select:focus {
+    box-shadow: 0 0 0 2px inset var(--action);
+    outline: 0; }
 
 /**
  * Core block styles - both front-end and editor

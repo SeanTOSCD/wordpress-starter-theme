@@ -4,6 +4,7 @@ section[class*="-section"] {
 		margin-bottom: 3rem;
 
 		.section-description {
+			color: var(--subdued-body);
 
 			p {
 
@@ -42,6 +43,7 @@ section[class*="-section"] {
 	}
 
 	.page-description {
+		color: var(--subdued-body);
 		max-width: 768px;
 
 		@media all and (min-width: 768px) {
@@ -59,7 +61,7 @@ section[class*="-section"] {
 	.page-header {
 
 		.page-title {
-			color: var(--subdued-action);
+			color: var(--subdued-body);
 			font-size: 1rem;
 			font-weight: 700;
 			line-height: 1;

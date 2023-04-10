@@ -16,13 +16,13 @@
 				font-weight: 700;
 
 				a {
-					color: var(--body);
+					color: var(--action);
 					text-decoration: none;
 
 					&:hover,
 					&:focus,
 					&:active {
-						color: var(--action);
+						color: var(--body);
 					}
 				}
 			}

@@ -40,14 +40,13 @@
 				&:active,
 				&:focus,
 				&:hover {
-					text-decoration: underline;
+					color: var(--action);
 				}
 			}
 
 			&.current-menu-item {
 
 				a {
-					text-decoration: underline;
 
 					&:active,
 					&:focus,
@@ -190,7 +189,7 @@
 				&.current-menu-item {
 
 					a {
-						color: var(--body);
+						color: var(--action);
 					}
 				}
 
@@ -230,7 +229,7 @@
 					&.sub-menu-active {
 
 						& > a {
-							color: var(--body);
+							color: var(--action);
 							text-decoration: underline;
 						}
 
@@ -382,13 +381,13 @@
 	.nav-next {
 
 		a {
-			color: var(--subdued-action);
+			color: var(--body);
 			font-size: 17px;
 			text-decoration: none;
 		}
 
 		.nav-subtitle {
-			color: var(--body);
+			color: var(--subdued-body);
 			display: block;
 			font-size: 15px;
 			font-weight: 700;
@@ -396,7 +395,7 @@
 			&:active,
 			&:focus,
 			&:hover {
-				color: var(--body);
+				color: var(--subdued-body);
 			}
 		}
 
@@ -436,26 +435,20 @@
 // Posts navigation (archives)
 .posts-navigation {
 
-	.nav-links {
+	.nav-previous,
+	.nav-next {
 
-		.nav-previous,
-		.nav-next {
+		a {
+			text-decoration: underline;
 
-			a {
-				text-decoration: underline;
-
-				&:active,
-				&:focus,
-				&:hover {
-					text-decoration: none;
-				}
+			&:active,
+			&:focus,
+			&:hover {
+				text-decoration: none;
 			}
 		}
 	}
 }
-
-// Post navigation (single post)
-.post-navigation {}
 
 // Adjustments for logged-in users (WP Admin bar)
 .logged-in {

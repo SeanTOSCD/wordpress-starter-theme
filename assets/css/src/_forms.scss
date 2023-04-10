@@ -71,8 +71,14 @@ textarea,
 select {
 	border: 0;
 	border-radius: 0;
-	box-shadow: 0 0 0 2px inset var(--body);
+	box-shadow: 0 0 0 2px inset var(--subdued-body);
 	box-sizing: border-box;
 	padding: .53em;
 	width: 100%;
+
+	&:active,
+	&:focus {
+		box-shadow: 0 0 0 2px inset var(--action);
+		outline: 0;
+	}
 }

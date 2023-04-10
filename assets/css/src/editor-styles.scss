@@ -1,6 +1,16 @@
 // Normalize the editor too
 @import "../../../node_modules/bootstrap/scss/bootstrap-reboot";
 
+// Default editor styles. The editor DOES NOT inherit theme Customizer styles, unfortunately.
+:root {
+	--body: #222222;
+	--subdued-body: #555555;
+	--lightest: #f5f5f5;
+	--darkest: #222222;
+	--action: #0073aa;
+	--subdued-action: #222222;
+}
+
 // Make Sass variables available for editor stylesheets
 @import "_variables";
 @import "_colors";
@@ -8,7 +18,7 @@
 // Make Sass mixins available for editor stylesheets
 @import "_mixins";
 
-// Keep front-end styles consistent in editor
+// Keep some front-end styles consistent in editor
 @import "_typography";
 @import "_forms";
 @import "_blocks";

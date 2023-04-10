@@ -100,6 +100,10 @@
 							@media all and (min-width: 768px) {
 								font-size: 21px;
 							}
+
+							&:not(.has-text-color) {
+								color: var(--subdued-body);
+							}
 						}
 
 						.wp-block-buttons {

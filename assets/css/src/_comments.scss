@@ -37,13 +37,23 @@
 
 			.comment-meta {
 				font-size: 14px;
-				font-weight: 500;
+				font-weight: 600;
 				margin-bottom: 1rem;
 
 				.comment-author {
 
 					.fn {
 						font-size: 20px;
+
+						a {
+							text-decoration: none;
+
+							&:active,
+							&:focus,
+							&:hover {
+								color: var(--subdued-body);
+							}
+						}
 					}
 				}
 

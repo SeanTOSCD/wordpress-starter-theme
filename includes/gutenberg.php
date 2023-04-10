@@ -52,11 +52,6 @@ function wst_editor_color_palette() {
 			'slug'  => 'action',
 			'color' => get_theme_mod( 'action_color', '#0073aa' ),
 		),
-		array(
-			'name'  => __( 'Action - Subdued', 'wst' ),
-			'slug'  => 'subdued-action',
-			'color' => get_theme_mod( 'subdued_action_color', '#666666' ),
-		),
 	);
 
 	add_theme_support( 'editor-color-palette', $wst_colors );
