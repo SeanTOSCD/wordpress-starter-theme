@@ -366,6 +366,43 @@
 	}
 }
 
+#footer-menu {
+	align-items: center;
+	column-gap: 1rem;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	list-style-type: none;
+
+	@media all and (min-width: 992px) {
+		column-gap: 1.5rem;
+		justify-content: flex-end;
+	}
+
+	.menu-item {
+
+		&.current-menu-item {
+
+			a {
+				color: var(--subdued-body);
+			}
+		}
+
+		a {
+			color: var(--body);
+			font-weight: 600;
+			line-height: 1;
+			text-decoration: none;
+
+			&:active,
+			&:focus,
+			&:hover {
+				color: var(--action);
+			}
+		}
+	}
+}
+
 // Persistent post(s) navigation styles
 .nav-links {
 	display: grid;

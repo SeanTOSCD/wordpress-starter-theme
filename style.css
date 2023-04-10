@@ -8693,6 +8693,27 @@ select {
       #site-navigation.toggled #primary-menu > .menu-item.menu-item-has-children.sub-menu-active .sub-menu {
         display: block; }
 
+#footer-menu {
+  align-items: center;
+  column-gap: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  list-style-type: none; }
+  @media all and (min-width: 992px) {
+    #footer-menu {
+      column-gap: 1.5rem;
+      justify-content: flex-end; } }
+  #footer-menu .menu-item.current-menu-item a {
+    color: var(--subdued-body); }
+  #footer-menu .menu-item a {
+    color: var(--body);
+    font-weight: 600;
+    line-height: 1;
+    text-decoration: none; }
+    #footer-menu .menu-item a:active, #footer-menu .menu-item a:focus, #footer-menu .menu-item a:hover {
+      color: var(--action); }
+
 .nav-links {
   display: grid;
   gap: 2rem 4%;

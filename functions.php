@@ -47,6 +47,7 @@ function wst_setup() {
 	register_nav_menus(
 		array(
 			'primary-menu' => __( 'Primary', 'wst' ),
+			'footer-menu' => __( 'Footer', 'wst' ),
 		)
 	);
 
