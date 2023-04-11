@@ -9072,11 +9072,13 @@ table {
   .comment-content > [class*="wp-block-"]:last-child {
     margin-bottom: 0; }
 .entry-content:not(.page-sections-content) figure,
+.comment-content figure {
+  width: 100%; }
+.entry-content:not(.page-sections-content) figure,
 .entry-content:not(.page-sections-content) img,
 .comment-content figure,
 .comment-content img {
-  max-width: 100%;
-  width: 100%; }
+  max-width: 100%; }
 
 /**
  * Shared Page Sections styles
