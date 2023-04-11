@@ -9298,6 +9298,19 @@ section[class*="-section"] .section-header {
 
 .sidebar-col {
   font-size: 16px; }
+  .sidebar-col h1, .sidebar-col .h1,
+  .sidebar-col h2, .sidebar-col .h2 {
+    font-size: 2rem; }
+  .sidebar-col h3, .sidebar-col .h3 {
+    font-size: 1.5rem; }
+  .sidebar-col h4, .sidebar-col .h4 {
+    color: var(--subdued-body);
+    font-size: 1.25rem; }
+  .sidebar-col h5, .sidebar-col .h5,
+  .sidebar-col h6, .sidebar-col .h6 {
+    font-size: 1rem; }
+  .sidebar-col h6, .sidebar-col .h6 {
+    color: var(--subdued-body); }
   .sidebar-col .widget_block {
     margin-bottom: 1rem; }
     @media all and (min-width: 768px) {
@@ -9306,8 +9319,6 @@ section[class*="-section"] .section-header {
     .sidebar-col .widget_block ul {
       padding-left: 0;
       margin-left: 0; }
-  .sidebar-col .wp-block-heading {
-    font-size: 1.25rem; }
   .sidebar-col .wp-block-latest-comments {
     padding-left: 0; }
   .sidebar-col .widget_search .wp-block-search__label {
