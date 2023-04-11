@@ -1,14 +1,16 @@
 // Normalize the editor too
 @import "../../../node_modules/bootstrap/scss/bootstrap-reboot";
+@import "../../../node_modules/bootstrap/scss/bootstrap-utilities";
+@import "../../../node_modules/bootstrap/scss/bootstrap-grid";
 
 // Default editor styles. The editor DOES NOT inherit theme Customizer styles, unfortunately.
 :root {
-	--body: #222222;
-	--subdued-body: #555555;
-	--lightest: #f5f5f5;
-	--darkest: #222222;
-	--action: #0073aa;
-	--subdued-action: #222222;
+	--body: #002959;
+	--subdued-body: #315b82;
+	--lightest: #f7f9fc;
+	--darkest: #002959;
+	--action: #00bca9;
+	--subdued-action: #002959;
 }
 
 // Make Sass variables available for editor stylesheets
@@ -107,14 +109,14 @@ body {
 				& > .wp-block-group__inner-container {
 
 					.wp-block-buttons {
+						margin: 1rem 0;
+
+						@media all and (min-width: 768px) {
+							margin: 2rem 0;
+						}
 
 						&:last-child {
 							margin-bottom: 0;
-							margin-top: 1rem;
-
-							@media all and (min-width: 768px) {
-								margin-top: 2rem;
-							}
 						}
 					}
 				}
@@ -134,13 +136,16 @@ body {
 	.wp-block-button {
 
 		.wp-block-button__link {
-			border-radius: 0;
+			border-radius: 2px;
 		}
 	}
 
 	/**
 	 * Markup & formatting tweaks
 	 */
+
+	@include heading-font-reduced;
+
 	h1, .h1,
 	h2, .h2,
 	h3, .h3,

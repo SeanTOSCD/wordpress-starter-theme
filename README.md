@@ -1,14 +1,20 @@
-### WordPress Starter Theme
-
----
-
-### Description
+# WordPress Starter Theme
 
 This is a starter theme for WordPress. It is based on the classic [underscores.me](https://underscores.me) starter theme, though several things have been changed, added, or removed.
 
-*NOTE: This theme is mainly for you to download and customize for yourself. Limited support will be provided, other than fixing obvious bugs, typos, or adding necessary features. No updates are pushed directly to users. So each download will exist as a snapshot in time.*
+**NOTE: This theme is meant for you to download and customize (if needed) for your own project. Limited support will be provided, other than fixing obvious bugs, typos, or adding necessary features. No updates are pushed directly to users. Each download exists as a snapshot in time.**
 
-#### Design Features
+## Development Setup
+
+This theme uses [Node.js](https://nodejs.org/en/) and [Grunt](https://gruntjs.com) to manage dependencies and compile Sass, minify CSS and JS, and update the .pot file.
+
+1. Install [Node.js](https://nodejs.org/en/) on your machine if you haven't already.
+2. Install and activate the theme in WordPress.
+3. Run `npm install` in the theme root directory to install dependencies.
+4. Run `grunt watch` to automatically compile Sass, minify CSS and JS while working on the theme styles and scripts.
+5. Run `grunt pot` to update the .pot file.
+
+## Design Features
 
 * Includes Bootstrap (CSS) utilities, grid, and reboot
 * Includes Wide page template (page-width content column, no sidebar)
@@ -19,26 +25,17 @@ This is a starter theme for WordPress. It is based on the classic [underscores.m
 * Desktop menu with drop-down support and mobile menu with expandable sub-menus on click
 * Centered blog post layout with no sidebar for easy reading
 * Condensed search results page layout
+* Color scheme options in the Customizer, available for use in the Block Editor
 
-#### Development Features
+### Customizer Options
 
-* Translations ready with .pot file
-* Has editor styles for the WordPress visual editor (Sass enabled)
-* Manages dependencies with NPM
-* Uses [Sass](http://sass-lang.com/) for CSS preprocessing
-* [Grunt task runner](https://gruntjs.com) for compiling Sass, minifying CSS and JS, and updating .pot file
+The theme includes color scheme options in the Customizer. Set the body text, subdued body text, light background, dark background, and action colors to easily change the theme's general color scheme.
 
-### Development Setup
+Once set in the Customizer, these colors are available for use in the Block Editor.
 
-1. Install [Node.js](https://nodejs.org/en/) on your machine if you haven't already.
-2. Install and activate the theme in WordPress.
-3. Run `npm install` in the theme root directory to install dependencies.
-4. Run `grunt watch` to automatically compile Sass, minify CSS and JS while working on the theme styles and scripts.
-5. Run `grunt pot` to update the .pot file.
+### Styles and Scripts
 
-### Understanding theme styles and scripts
-
-With the theme activated and you've already run `npm install`, run `grunt watch` in the theme root directory to automatically compile Sass, minify CSS and JS while working on the theme styles and scripts.
+With the theme activated and having run `npm install`, you may now run `grunt watch` in the theme root directory to automatically compile Sass, minify CSS and JS while working on the theme styles and scripts.
 
 Styles and scripts should be edited in the `assets/css/src` and `assets/js/src` directories, respectively. The `assets/css` and `assets/js` directories are where the compiled and minified files are automatically placed. Any styles or scripts that you do not want to be compiled or minified should be placed directly in the `assets/css` and `assets/js` directories, respectively (or anywhere you want outside the `src` directories).
 
@@ -46,7 +43,7 @@ The `assets/css/styles.scss` and `assets/css/editor-styles.scss` files are the m
 
 The `assets/js/scripts.js` file is compiled from all files in the `assets/js/src` directory. This file is then minified to `assets/js/scripts.min.js` and used for the theme.
 
-### Understanding theme HTML structure
+### HTML structure
 
 The theme uses the [Bootstrap](https://getbootstrap.com/docs/5.3/layout/grid/) Grid system for layouts. The `.container`, `.row`, and `.col` classes are used throughout the theme to give structure.
 
@@ -88,7 +85,7 @@ The `.inner` class also supports additional (optional) class modifiers to adjust
 
 `<div class="inner tiny">` would create a relatively small page section while `<div class="inner huge">` would create a very large page section.
 
-#### Block Editor (Gutenberg) Page Sections
+### Block Editor (Gutenberg) Page Sections
 
 The above HTML structure is only achievable when you are the HTML author. However, the theme includes a style system which allows you to place a **Group** block into the *Page Sections* page template and the default structure of the block will inherit the page section style. No classes need to be added to the block for this to work. The Group block simply needs to:
 
@@ -159,7 +156,7 @@ get_template_part( 'template-parts/section', 'page-header', array(
 
 The template part is used throughout the theme in a logical manner and is ready to be customized for any template file you decide to create.
 
-### Advanced Custom Fields
+## Advanced Custom Fields
 
 The aforementioned Page Header functionality is ready for use with [Advanced Custom Fields](https://advancedcustomfields.com/) (ACF) plugin. ACF can be used in any other way you'd like, but the theme includes a few custom fields that are ready to be used right out of the box. It works with both the [free](https://wordpress.org/plugins/advanced-custom-fields/) version and the pro version.
 
@@ -171,7 +168,7 @@ On site **pages** that are editable from the WordPress dashboard, you'll see a n
 
 *Note: The Field Group is set to only display on WordPress pages, and only if the page *does not* use the Page Sections page template. If a page header is desired in the Page Sections template, it should be build in the block editor itself.*
 
-### Theme Issues
+## Theme Issues
 
 If you encounter any issues with the theme, please [open an issue](https://github.com/SeanTOSCD/wordpress-starter-theme/issues). Please include as much information as possible, including:
 

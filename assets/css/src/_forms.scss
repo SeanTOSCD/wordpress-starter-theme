@@ -6,7 +6,7 @@ input[type="submit"],
 .wp-block-search__button {
 	background-color: var(--action);
 	border: 0;
-	border-radius: 0;
+	border-radius: 2px;
 	color: #fff;
 	display: inline-block;
 	padding: .53em 1.7em;
@@ -70,7 +70,7 @@ input[type="password"],
 textarea,
 select {
 	border: 0;
-	border-radius: 0;
+	border-radius: 2px;
 	box-shadow: 0 0 0 2px inset var(--subdued-body);
 	box-sizing: border-box;
 	padding: .53em;

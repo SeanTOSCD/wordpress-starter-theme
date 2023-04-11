@@ -56,3 +56,13 @@ body {
 .has-action-background-color {
 	background-color: var(--action);
 }
+
+/* Translucent - Light */
+.has-translucent-light-background-color {
+	background-color: rgba(255,255,255,.15);
+}
+
+/* Translucent - Dark */
+.has-translucent-dark-background-color {
+	background-color: rgba(0,0,0,.2);
+}

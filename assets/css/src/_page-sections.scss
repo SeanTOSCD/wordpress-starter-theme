@@ -107,13 +107,14 @@
 						}
 
 						.wp-block-buttons {
+							margin: 2rem 0;
+
+							@media all and (min-width: 768px) {
+								margin: 3rem 0;
+							}
 
 							&:last-child {
-								margin-top: 2rem;
-
-								@media all and (min-width: 768px) {
-									margin-top: 3rem;
-								}
+								margin-bottom: 0;
 							}
 						}
 					}

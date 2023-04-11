@@ -11,6 +11,7 @@
 		color: var(--body);
 		cursor: pointer;
 		padding: 0;
+		text-transform: unset;
 
 		@media all and (min-width: 992px) {
 			display: none;
@@ -275,8 +276,7 @@
 
 		.close-menu {
 			display: inline-block;
-			font-size: 14px;
-			font-weight: 600;
+			font-size: 13px;
 			position: relative;
 			text-align: right;
 			text-decoration: none;
@@ -337,9 +337,20 @@
 						background-color: #fff;
 						border-bottom: 1px solid var(--lightest);
 						display: none;
-						padding: 7px 1rem 7px 0;
+						margin: 6px 0 0 1rem;
+						padding: 0 0 6px 0;
 
 						& > .menu-item {
+
+							a {
+								color: var(--subdued-body);
+
+								&:hover,
+								&:focus,
+								&:active {
+									color: var(--action);
+								}
+							}
 
 							&.menu-item-has-children {
 
@@ -353,7 +364,7 @@
 					&.sub-menu-active {
 
 						& > a {
-							text-decoration: underline;
+							color: var(--action);
 						}
 
 						.sub-menu {

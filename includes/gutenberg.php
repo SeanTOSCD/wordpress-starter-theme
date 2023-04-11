@@ -30,27 +30,37 @@ function wst_editor_color_palette() {
 		array(
 			'name'  => __( 'Body Text', 'wst' ),
 			'slug'  => 'body',
-			'color' => get_theme_mod( 'body_color', '#222222' ),
+			'color' => get_theme_mod( 'body_color', '#002959' ),
 		),
 		array(
 			'name'  => __( 'Body Text - Subdued', 'wst' ),
 			'slug'  => 'subdued-body',
-			'color' => get_theme_mod( 'subdued_body_color', '#555555' ),
+			'color' => get_theme_mod( 'subdued_body_color', '#315b82' ),
 		),
 		array(
 			'name'  => __( 'The Lightest Color', 'wst' ),
 			'slug'  => 'the-lightest',
-			'color' => get_theme_mod( 'lightest_color', '#f5f5f5' ),
+			'color' => get_theme_mod( 'lightest_color', '#f7f9fc' ),
 		),
 		array(
 			'name'  => __( 'The Darkest Color', 'wst' ),
 			'slug'  => 'the-darkest',
-			'color' => get_theme_mod( 'darkest_color', '#222222' ),
+			'color' => get_theme_mod( 'darkest_color', '#002959' ),
 		),
 		array(
 			'name'  => __( 'Action', 'wst' ),
 			'slug'  => 'action',
-			'color' => get_theme_mod( 'action_color', '#0073aa' ),
+			'color' => get_theme_mod( 'action_color', '#00bca9' ),
+		),
+		array(
+			'name'  => __( 'Translucent Background - Light', 'wst' ),
+			'slug'  => 'translucent-light',
+			'color' => 'rgba(255,255,255,0.1)',
+		),
+		array(
+			'name'  => __( 'Translucent Background - Dark', 'wst' ),
+			'slug'  => 'translucent-dark',
+			'color' => 'rgba(0,0,0,0.1)',
 		),
 	);
 
