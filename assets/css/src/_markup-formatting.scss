@@ -149,13 +149,13 @@ ol {
 }
 
 a {
-	color: var(--subdued-action);
+	color: var(--action);
 	text-decoration: underline;
 
 	&:active,
 	&:hover,
 	&:focus {
-		color: var(--body);
+		color: var(--action);
 		text-decoration: none;
 	}
 }

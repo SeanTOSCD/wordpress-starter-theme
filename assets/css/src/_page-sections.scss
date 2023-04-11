@@ -83,7 +83,6 @@
 			&.is-layout-constrained {
 
 				&.page-header {
-					text-align: center;
 
 					& > .wp-block-group__inner-container {
 
@@ -94,7 +93,6 @@
 						}
 
 						& > p {
-							margin: 0 auto;
 							max-width: 768px;
 
 							@media all and (min-width: 768px) {
@@ -115,6 +113,17 @@
 
 							&:last-child {
 								margin-bottom: 0;
+							}
+						}
+					}
+
+					&.text-center {
+						text-align: center;
+
+						& > .wp-block-group__inner-container {
+
+							& > p {
+								margin: 0 auto;
 							}
 						}
 					}

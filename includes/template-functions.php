@@ -32,7 +32,7 @@ function wst_body_classes( $classes ) {
 	}
 
 	// Adds a class of page-header-centered if the page should have a centered page header.
-	if ( is_front_page() || is_single() || is_page_template( 'template-narrow.php' ) ) {
+	if ( is_single() || is_page_template( 'template-narrow.php' ) ) {
 		$classes[] = 'page-header-centered';
 	}
 

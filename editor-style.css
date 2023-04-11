@@ -8162,6 +8162,11 @@ progress {
  *
  * By default, the theme only uses CSS variables.
  */
+:root {
+  --white: #fff;
+  --transulent-light: rgba(255,255,255,.15);
+  --transulent-dark: rgba(0,0,0,.15); }
+
 body {
   color: var(--body); }
 
@@ -8214,7 +8219,7 @@ body {
 
 /* Translucent - Dark */
 .has-translucent-dark-background-color {
-  background-color: rgba(0, 0, 0, 0.2); }
+  background-color: rgba(0, 0, 0, 0.15); }
 
 body {
   font-size: 17px;
@@ -8342,8 +8347,8 @@ select {
 .wp-block-quote-editor {
   background-color: var(--lightest);
   color: var(--subdued-body);
-  font-size: 115%;
-  font-weight: 600;
+  font-size: 95%;
+  font-weight: 500;
   padding: 1.5rem; }
   @media all and (min-width: 768px) {
     .wp-block-quote,
