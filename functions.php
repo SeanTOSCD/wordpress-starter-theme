@@ -126,10 +126,11 @@ function disable_classic_theme_styles() {
 add_filter( 'wp_enqueue_scripts', 'disable_classic_theme_styles', 100 );
 
 // Theme functions
+require THEME_INCLUDES . '/customizer.php';
 require THEME_INCLUDES . '/gutenberg.php';
 require THEME_INCLUDES . '/template-functions.php';
 require THEME_INCLUDES . '/template-tags.php';
-require THEME_INCLUDES . '/customizer.php';
+require THEME_INCLUDES . '/widgets.php';
 
 // Integrations
 if ( class_exists( 'acf' ) ) {

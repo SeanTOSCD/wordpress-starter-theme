@@ -423,7 +423,7 @@
 	display: grid;
 	gap: 2rem 4%;
 	grid-template-columns: 100%;
-	padding: 1rem 0;
+	padding: 3rem 0 1rem;
 
 	@media all and (min-width: 768px) {
 		grid-template-columns: 48% 48%;

@@ -22,3 +22,57 @@
 		}
 	}
 }
+
+.fat-footer-section {
+	@include heading-font-reduced;
+	font-size: 17px;
+
+	.fat-col {
+
+		.widget_block {
+
+			p {
+				margin-bottom: 1.25rem;
+
+				@media all and (min-width: 576px) {
+					margin-bottom: 1.5rem;
+				}
+
+				@media all and (min-width: 992px) {
+					margin-bottom: 1.67rem;
+				}
+			}
+		}
+	}
+
+	.single-col {
+
+		ul,
+		.menu {
+			font-size: 15px;
+			list-style: none;
+			margin: 0;
+			padding: 0;
+
+			li,
+			.menu-item {
+				margin-bottom: 0;
+
+				a {
+					color: var(--body);
+					display: block;
+					font-weight: 600;
+					line-height: 1;
+					padding: 7px 0;
+					text-decoration: none;
+
+					&:active,
+					&:focus,
+					&:hover {
+						color: var(--action);
+					}
+				}
+			}
+		}
+	}
+}

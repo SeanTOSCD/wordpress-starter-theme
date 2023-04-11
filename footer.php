@@ -5,9 +5,10 @@
  * Contains the closing of the #content div and all content after.
  */
 
+get_template_part( 'template-parts/section', 'fat-footer' );
 ?>
 
-	<footer id="colophon" class="site-footer">
+	<footer id="colophon" class="site-footer background-lightest">
         <div class="inner tiny">
             <div class="container">
                 <div class="site-info-row row justify-content-between text-center text-lg-start">
