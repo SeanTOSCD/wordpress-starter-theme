@@ -433,13 +433,13 @@
 	.nav-next {
 
 		a {
-			color: var(--body);
+			color: var(--subdued-action);
 			font-size: 17px;
 			text-decoration: none;
 		}
 
 		.nav-subtitle {
-			color: var(--subdued-body);
+			color: var(--body);
 			display: block;
 			font-size: 15px;
 			font-weight: 700;
@@ -447,7 +447,7 @@
 			&:active,
 			&:focus,
 			&:hover {
-				color: var(--subdued-body);
+				color: var(--body);
 			}
 		}
 
@@ -487,16 +487,20 @@
 // Posts navigation (archives)
 .posts-navigation {
 
-	.nav-previous,
-	.nav-next {
+	.nav-links {
+		padding: 1rem 0 0;
 
-		a {
-			text-decoration: underline;
+		.nav-previous,
+		.nav-next {
 
-			&:active,
-			&:focus,
-			&:hover {
-				text-decoration: none;
+			a {
+				text-decoration: underline;
+
+				&:active,
+				&:focus,
+				&:hover {
+					text-decoration: none;
+				}
 			}
 		}
 	}
