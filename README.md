@@ -27,12 +27,6 @@ This theme uses [Node.js](https://nodejs.org/en/) and [Grunt](https://gruntjs.co
 * Condensed search results page layout
 * Color scheme options in the Customizer, available for use in the Block Editor
 
-### Customizer Options
-
-The theme includes color scheme options in the Customizer. Set the body text, subdued body text, light background, dark background, and action colors to easily change the theme's general color scheme.
-
-Once set in the Customizer, these colors are available for use in the Block Editor.
-
 ### Styles and Scripts
 
 With the theme activated and having run `npm install`, you may now run `grunt watch` in the theme root directory to automatically compile Sass, minify CSS and JS while working on the theme styles and scripts.
@@ -155,6 +149,22 @@ get_template_part( 'template-parts/section', 'page-header', array(
 ```
 
 The template part is used throughout the theme in a logical manner and is ready to be customized for any template file you decide to create.
+
+### Customizer Options
+
+The theme includes color scheme options in the Customizer. Set the body text, subdued body text, light background, dark background, and action colors to easily change the theme's general color scheme.
+
+Once set in the Customizer, these colors are available for use in the Block Editor.
+
+### Fat Footer
+
+The theme includes a fat footer template part that can be used in any template file. It is designed to display a more robust footer at the bottom of the page, just above the footer copyright.
+
+The area is separated into two columns. The left column is wide with a single widgetized area in it, meant for paragraph text and other relatively large elements. The right column is even wider, but broken down into three widgetized areas that display side by side, meant for more narrow elements like vertical navigation menus or social icons.
+
+The fat footer only displays columns whose widget areas have widgets in them. If none of the areas have widgets in them, the entire fat footer will disappear.
+
+Navigation menus placed in the fat footer will automatically be styled to display vertically and do not support sub-menus.
 
 ## Advanced Custom Fields
 
