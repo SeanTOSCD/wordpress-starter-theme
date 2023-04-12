@@ -126,6 +126,7 @@ function disable_classic_theme_styles() {
 add_filter( 'wp_enqueue_scripts', 'disable_classic_theme_styles', 100 );
 
 // Theme functions
+require THEME_INCLUDES . '/block-patterns.php';
 require THEME_INCLUDES . '/customizer.php';
 require THEME_INCLUDES . '/gutenberg.php';
 require THEME_INCLUDES . '/template-functions.php';
