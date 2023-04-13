@@ -1,8 +1,7 @@
 /**
  * Shared Page Sections styles
  */
-.page-template-template-page-sections,
-.page-front {
+.page-template-template-page-sections {
 
 	/* Only the above templates have this class */
 	.page-sections-content {
@@ -124,6 +123,14 @@
 
 							& > p {
 								margin: 0 auto;
+							}
+
+							& > .wp-block-buttons {
+								margin: 2rem auto;
+
+								@media all and (min-width: 768px) {
+									margin: 3rem auto;
+								}
 							}
 						}
 					}
