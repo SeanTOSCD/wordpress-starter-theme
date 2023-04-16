@@ -8392,7 +8392,7 @@ progress {
     font-weight: 700;
     text-decoration: none; }
     #colophon .site-copyright a:active, #colophon .site-copyright a:focus, #colophon .site-copyright a:hover {
-      color: var(--action); }
+      color: var(--subdued-body); }
 
 .fat-footer-section {
   font-size: 17px; }
@@ -8671,7 +8671,7 @@ select {
       column-gap: 1.5rem;
       justify-content: flex-end; } }
   #site-navigation:not(.toggled) #primary-menu .menu-item.current-menu-item a {
-    color: var(--action); }
+    color: var(--subdued-body); }
   #site-navigation:not(.toggled) #primary-menu .menu-item .sub-menu {
     margin-left: 0;
     text-align: left; }
