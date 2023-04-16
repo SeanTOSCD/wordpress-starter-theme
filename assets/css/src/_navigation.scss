@@ -400,6 +400,13 @@
 
 			a {
 				color: var(--subdued-body);
+				cursor: text;
+
+				&:active,
+				&:focus,
+				&:hover {
+					color: var(--subdued-body);
+				}
 			}
 		}
 

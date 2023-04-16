@@ -8772,7 +8772,10 @@ select {
   #footer-menu .menu-item {
     margin-bottom: 0; }
     #footer-menu .menu-item.current-menu-item a {
-      color: var(--subdued-body); }
+      color: var(--subdued-body);
+      cursor: text; }
+      #footer-menu .menu-item.current-menu-item a:active, #footer-menu .menu-item.current-menu-item a:focus, #footer-menu .menu-item.current-menu-item a:hover {
+        color: var(--subdued-body); }
     #footer-menu .menu-item a {
       color: var(--body);
       font-weight: 600;
