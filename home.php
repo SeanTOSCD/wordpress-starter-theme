@@ -5,9 +5,19 @@
 
 get_header();
 
-$title = get_the_title( get_option( 'page_for_posts' ) );
-$description = get_the_excerpt( get_option( 'page_for_posts' ) );
+$page_for_posts = get_option( 'page_for_posts' );
 
+// Default page header when the blog page is not set and the blog page is the front page
+$title = sprintf( __( 'Welcome to %s', 'wst' ), get_bloginfo( 'name' ) );
+$description = get_bloginfo( 'description' );
+
+// If the blog page is set, use the title and description of the page
+if ( ! empty( $page_for_posts ) ) {
+    $title = get_the_title( $page_for_posts );
+    $description = get_the_excerpt( $page_for_posts );
+}
+
+// If ACF is installed, use the title and description from the page header
 if ( class_exists( 'acf' ) ) {
 
 	if ( get_field( 'page_header_title', get_option( 'page_for_posts' ) ) ) {
