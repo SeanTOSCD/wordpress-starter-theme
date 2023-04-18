@@ -106,7 +106,7 @@ get_template_part( 'template-parts/section', 'page-header' );
 
 This results in the following visual output at the top of this sample page:
 
-![Page Header](assets/images/sample-page-screenshot.png)
+![WordPress Starter Theme - Sample Page Screenshot](https://user-images.githubusercontent.com/2359131/232828083-56e2073f-e2be-48ce-b73f-9802e4919a76.png)
 
 This is a dynamic page header that can be customized in several ways and across multiple templates. The `get_template_part()` call accepts arguments so that you can customize the title and description for each page. For example, the following code displays the post title and excerpt (if it exists) on a single blog post:
 
