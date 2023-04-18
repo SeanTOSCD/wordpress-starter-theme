@@ -190,3 +190,43 @@ If you encounter any issues with the theme, please [open an issue](https://githu
 - Screenshots
 - Error messages
 - Any other relevant information
+
+## Screenshots
+
+-----
+
+### Page Sections - Page Template (all built inside the Block Editor)
+
+![WordPress Starter Theme - Page Sections Screenshot](https://user-images.githubusercontent.com/2359131/232828087-9de98f8e-25ef-4708-92c0-0da56dcdc4a4.png)
+
+### Blog Page
+
+![WordPress Starter Theme - Blog Screenshot](https://user-images.githubusercontent.com/2359131/232828094-e0e1663b-686f-45b3-83f5-6dd2eba63ce0.png)
+
+### Single Blog Post
+
+![WordPress Starter Theme - Blog Post Screenshot](https://user-images.githubusercontent.com/2359131/232828096-0b8d3c0c-9432-4057-b75e-c4f8d1db0865.png)
+
+### Page - Default Template
+
+![WordPress Starter Theme - Sample Page Screenshot](https://user-images.githubusercontent.com/2359131/232828083-56e2073f-e2be-48ce-b73f-9802e4919a76.png)
+
+### Page - Narrow Page Template
+
+![WordPress Starter Theme - Sample Page Narrow Screenshot](https://user-images.githubusercontent.com/2359131/232828085-dd5b3657-42cb-47cd-9334-eda55b543f9e.png)
+
+### Page - Wide Page Template
+
+![WordPress Starter Theme - Sample Page Wide Screenshot](https://user-images.githubusercontent.com/2359131/232828079-decdc236-cbe5-4e42-8abb-08dbcf6bc2ed.png)
+
+### Search
+
+![WordPress Starter Theme - Search Screenshot](https://user-images.githubusercontent.com/2359131/232828076-a47ee730-2a72-4ad8-8d85-1a81fe860bdc.png)
+
+### Mobile Navigation Menu
+
+![WordPress Starter Theme - Mobile Menu Screenshot](https://user-images.githubusercontent.com/2359131/232828090-d123c7c0-36db-47ab-b858-972e07342bae.png)
+
+### Customizer - Theme Colors
+
+![WordPress Starter Theme - Customizer Theme Colors Screenshot](https://user-images.githubusercontent.com/2359131/232828091-75272213-bdd1-4ea6-a7bf-735b36a4c75d.png)
