@@ -406,20 +406,22 @@
 				&:focus,
 				&:hover {
 					color: var(--subdued-body);
+					text-decoration: none;
 				}
 			}
 		}
 
 		a {
-			color: var(--body);
-			font-weight: 600;
+			color: var(--subdued-body);
+			font-weight: 400;
 			line-height: 1;
 			text-decoration: none;
 
 			&:active,
 			&:focus,
 			&:hover {
-				color: var(--action);
+				color: var(--body);
+				text-decoration: underline;
 			}
 		}
 	}

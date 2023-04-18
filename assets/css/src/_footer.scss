@@ -29,6 +29,16 @@
 
 	.fat-col {
 
+		.fat-footer-area-one {
+
+			p {
+
+				a {
+					color: var(--subdued-body);
+				}
+			}
+		}
+
 		.widget_block {
 
 			p {
@@ -47,7 +57,7 @@
 
 	.single-col {
 
-		ul,
+		ul:not(.wp-block-social-links),
 		.menu {
 			font-size: 15px;
 			list-style: none;

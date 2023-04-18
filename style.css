@@ -8409,6 +8409,8 @@ progress {
     font-size: 1rem; }
   .fat-footer-section h6, .fat-footer-section .h6 {
     color: var(--subdued-body); }
+  .fat-footer-section .fat-col .fat-footer-area-one p a {
+    color: var(--subdued-body); }
   .fat-footer-section .fat-col .widget_block p {
     margin-bottom: 1.25rem; }
     @media all and (min-width: 576px) {
@@ -8417,19 +8419,19 @@ progress {
     @media all and (min-width: 992px) {
       .fat-footer-section .fat-col .widget_block p {
         margin-bottom: 1.67rem; } }
-  .fat-footer-section .single-col ul,
+  .fat-footer-section .single-col ul:not(.wp-block-social-links),
   .fat-footer-section .single-col .menu {
     font-size: 15px;
     list-style: none;
     margin: 0;
     padding: 0; }
-    .fat-footer-section .single-col ul li,
-    .fat-footer-section .single-col ul .menu-item,
+    .fat-footer-section .single-col ul:not(.wp-block-social-links) li,
+    .fat-footer-section .single-col ul:not(.wp-block-social-links) .menu-item,
     .fat-footer-section .single-col .menu li,
     .fat-footer-section .single-col .menu .menu-item {
       margin-bottom: 0; }
-      .fat-footer-section .single-col ul li a,
-      .fat-footer-section .single-col ul .menu-item a,
+      .fat-footer-section .single-col ul:not(.wp-block-social-links) li a,
+      .fat-footer-section .single-col ul:not(.wp-block-social-links) .menu-item a,
       .fat-footer-section .single-col .menu li a,
       .fat-footer-section .single-col .menu .menu-item a {
         color: var(--body);
@@ -8438,10 +8440,10 @@ progress {
         line-height: 1;
         padding: 7px 0;
         text-decoration: none; }
-        .fat-footer-section .single-col ul li a:active, .fat-footer-section .single-col ul li a:focus, .fat-footer-section .single-col ul li a:hover,
-        .fat-footer-section .single-col ul .menu-item a:active,
-        .fat-footer-section .single-col ul .menu-item a:focus,
-        .fat-footer-section .single-col ul .menu-item a:hover,
+        .fat-footer-section .single-col ul:not(.wp-block-social-links) li a:active, .fat-footer-section .single-col ul:not(.wp-block-social-links) li a:focus, .fat-footer-section .single-col ul:not(.wp-block-social-links) li a:hover,
+        .fat-footer-section .single-col ul:not(.wp-block-social-links) .menu-item a:active,
+        .fat-footer-section .single-col ul:not(.wp-block-social-links) .menu-item a:focus,
+        .fat-footer-section .single-col ul:not(.wp-block-social-links) .menu-item a:hover,
         .fat-footer-section .single-col .menu li a:active,
         .fat-footer-section .single-col .menu li a:focus,
         .fat-footer-section .single-col .menu li a:hover,
@@ -8775,14 +8777,16 @@ select {
       color: var(--subdued-body);
       cursor: text; }
       #footer-menu .menu-item.current-menu-item a:active, #footer-menu .menu-item.current-menu-item a:focus, #footer-menu .menu-item.current-menu-item a:hover {
-        color: var(--subdued-body); }
+        color: var(--subdued-body);
+        text-decoration: none; }
     #footer-menu .menu-item a {
-      color: var(--body);
-      font-weight: 600;
+      color: var(--subdued-body);
+      font-weight: 400;
       line-height: 1;
       text-decoration: none; }
       #footer-menu .menu-item a:active, #footer-menu .menu-item a:focus, #footer-menu .menu-item a:hover {
-        color: var(--action); }
+        color: var(--body);
+        text-decoration: underline; }
 
 .nav-links {
   display: grid;
