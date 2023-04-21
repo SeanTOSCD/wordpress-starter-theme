@@ -136,10 +136,6 @@ ol {
 	li {
 		margin-bottom: .5rem;
 
-		&::marker {
-			color: var(--subdued-body);
-		}
-
 		ul,
 		ol {
 			margin-bottom: .75rem;

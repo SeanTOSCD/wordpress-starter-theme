@@ -8981,9 +8981,6 @@ ol {
   ul li,
   ol li {
     margin-bottom: .5rem; }
-    ul li::marker,
-    ol li::marker {
-      color: var(--subdued-body); }
     ul li ul,
     ul li ol,
     ol li ul,
