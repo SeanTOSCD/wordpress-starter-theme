@@ -8489,12 +8489,14 @@ body {
        * Vertical padding header classes top-level blocks
        */ }
       body .wp-block-post-content > [class*="wp-block-"] > [class*="__inner-container"] {
-        padding: 3rem .75rem;
+        padding: 3rem calc( .75rem + 12px );
         margin: 0 auto;
         width: 100%; }
         @media all and (min-width: 576px) {
           body .wp-block-post-content > [class*="wp-block-"] > [class*="__inner-container"] {
-            max-width: 540px; } }
+            max-width: 540px;
+            padding-left: .75rem;
+            padding-right: .75rem; } }
         @media all and (min-width: 768px) {
           body .wp-block-post-content > [class*="wp-block-"] > [class*="__inner-container"] {
             max-width: 720px; } }
