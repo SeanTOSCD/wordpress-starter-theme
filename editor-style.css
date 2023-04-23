@@ -8149,14 +8149,6 @@ progress {
 
   .d-print-none {
     display: none !important; } }
-:root {
-  --body: #002959;
-  --subdued-body: #315b82;
-  --lightest: #f7f9fc;
-  --darkest: #002959;
-  --action: #00bca9;
-  --subdued-action: #002959; }
-
 /**
  * Feel free to configure your own Sass variables here.
  *
@@ -8587,6 +8579,7 @@ body {
   body .wp-block-search .wp-block-search__input {
     width: unset; }
   body .wp-block-button .wp-block-button__link {
+    background-color: var(--action);
     border-radius: 2px; }
   body h1, body .h1,
   body h2, body .h2 {

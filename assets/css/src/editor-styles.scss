@@ -3,16 +3,6 @@
 @import "../../../node_modules/bootstrap/scss/bootstrap-utilities";
 @import "../../../node_modules/bootstrap/scss/bootstrap-grid";
 
-// Default editor styles. The editor DOES NOT inherit theme Customizer styles, unfortunately.
-:root {
-	--body: #002959;
-	--subdued-body: #315b82;
-	--lightest: #f7f9fc;
-	--darkest: #002959;
-	--action: #00bca9;
-	--subdued-action: #002959;
-}
-
 // Make Sass variables available for editor stylesheets
 @import "_variables";
 @import "_colors";
@@ -136,6 +126,7 @@ body {
 	.wp-block-button {
 
 		.wp-block-button__link {
+			background-color: var(--action);
 			border-radius: 2px;
 		}
 	}

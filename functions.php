@@ -41,7 +41,6 @@ function wst_setup() {
 
 	// Add support for editor styles
 	add_theme_support( 'editor-styles' );
-	add_editor_style( 'editor-style.css' );
 
 	// This theme uses wp_nav_menu() in one location.
 	register_nav_menus(

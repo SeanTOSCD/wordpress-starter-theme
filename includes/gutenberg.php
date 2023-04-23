@@ -9,9 +9,25 @@
  * @return void
  */
 function wst_editor_styles() {
+
 	add_editor_style();
+	wp_enqueue_style( 'wst-editor-styles', get_theme_file_uri( 'editor-styles.css' ), false, THEME_VERSION, 'all' );
+
+	// Make sure the custom colors are added to the editor
+	$custom_colors = '
+        :root {
+            --body: ' . get_theme_mod( 'body_color', '#002959' ) . ';
+            --subdued-body: ' . get_theme_mod( 'subdued_body_color', '#315b82' ) . ';
+            --lightest: ' . get_theme_mod( 'lightest_color', '#f7f9fc' ) . ';
+            --darkest: ' . get_theme_mod( 'darkest_color', '#002959' ) . ';
+            --action: ' . get_theme_mod( 'action_color', '#00bca9' ) . ';
+            --subdued-action: ' . get_theme_mod( 'subdued_action_color', '#002959' ) . ';
+        }';
+
+	wp_add_inline_style( 'wst-editor-styles', $custom_colors );
 }
-add_action( 'admin_init', 'wst_editor_styles' );
+add_action( 'enqueue_block_editor_assets', 'wst_editor_styles' );
+
 
 /**
  * Adjust editor styles
