@@ -45,6 +45,11 @@ body {
 			/* Layout related top-level blocks get Bootstrap .container styles */
 			& > [class*="__inner-container"] {
 				@include block-page-section-inner-container;
+
+				@media all and (min-width: 576px) {
+					padding-left: 2rem;
+					padding-right: 2rem;
+				}
 			}
 
 			/**

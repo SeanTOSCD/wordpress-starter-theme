@@ -8506,6 +8506,10 @@ body {
         @media all and (min-width: 1400px) {
           body .wp-block-post-content > [class*="wp-block-"] > [class*="__inner-container"] {
             max-width: 1320px; } }
+        @media all and (min-width: 576px) {
+          body .wp-block-post-content > [class*="wp-block-"] > [class*="__inner-container"] {
+            padding-left: 2rem;
+            padding-right: 2rem; } }
       body .wp-block-post-content > [class*="wp-block-"].tiny > [class*="__inner-container"] {
         padding-bottom: 1.5rem;
         padding-top: 1.5rem; }
