@@ -19,9 +19,9 @@ function wst_editor_styles() {
             --body: ' . get_theme_mod( 'body_color', '#002959' ) . ';
             --subdued-body: ' . get_theme_mod( 'subdued_body_color', '#315b82' ) . ';
             --lightest: ' . get_theme_mod( 'lightest_color', '#f7f9fc' ) . ';
-            --darkest: ' . get_theme_mod( 'darkest_color', '#002959' ) . ';
+            --darkest: ' . get_theme_mod( 'darkest_color', '#002754' ) . ';
             --action: ' . get_theme_mod( 'action_color', '#00bca9' ) . ';
-            --subdued-action: ' . get_theme_mod( 'subdued_action_color', '#002959' ) . ';
+            --subdued-action: ' . get_theme_mod( 'subdued_action_color', '#002754' ) . ';
         }';
 
 	wp_add_inline_style( 'wst-editor-styles', $custom_colors );
@@ -61,7 +61,7 @@ function wst_editor_color_palette() {
 		array(
 			'name'  => __( 'The Darkest Color', 'wst' ),
 			'slug'  => 'the-darkest',
-			'color' => get_theme_mod( 'darkest_color', '#002959' ),
+			'color' => get_theme_mod( 'darkest_color', '#002754' ),
 		),
 		array(
 			'name'  => __( 'Action', 'wst' ),

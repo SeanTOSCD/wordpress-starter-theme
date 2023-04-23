@@ -83,7 +83,7 @@ function wst_customize_register( $wp_customize ) {
 	$wp_customize->add_setting(
 		'darkest_color',
 		array(
-			'default'           => '#002959',
+			'default'           => '#002754',
 			'sanitize_callback' => 'sanitize_hex_color',
 			'transport'         => 'postMessage',
 		)
@@ -136,7 +136,7 @@ function wst_customizer_head_styles() {
 			--body: <?php echo get_theme_mod( 'body_color', '#002959' ); ?>;
 			--subdued-body: <?php echo get_theme_mod( 'subdued_body_color', '#315b82' ); ?>;
             --lightest: <?php echo get_theme_mod( 'lightest_color', '#f7f9fc' ); ?>;
-            --darkest: <?php echo get_theme_mod( 'darkest_color', '#002959' ); ?>;
+            --darkest: <?php echo get_theme_mod( 'darkest_color', '#002754' ); ?>;
             --action: <?php echo get_theme_mod( 'action_color', '#00bca9' ); ?>;
             --subdued-action: <?php echo get_theme_mod( 'body_color', '#002959' ); ?>;
 		}
