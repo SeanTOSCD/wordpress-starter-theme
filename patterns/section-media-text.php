@@ -17,9 +17,7 @@
             <!-- /wp:heading -->
 
             <!-- wp:paragraph {"placeholder":"Content…","textColor":"the-lightest"} -->
-            <p class="has-the-lightest-color has-text-color">Your use of WordPress Starter Theme is just the beginning
-                of your project journey. This theme is intended to be hacked, modified, or made your own in any number
-                of ways. Even if it's just to change the theme slug, it belongs to you once downloaded.</p>
+            <p class="has-the-lightest-color has-text-color">Your use of WordPress Starter Theme is just the beginning of your project journey. This theme is intended to be hacked, modified, or made your own in any number of ways. Even if it's just to change the theme slug, it belongs to you once downloaded.</p>
             <!-- /wp:paragraph --></div>
     </div>
     <!-- /wp:media-text -->
@@ -36,9 +34,7 @@
             <!-- /wp:heading -->
 
             <!-- wp:paragraph {"placeholder":"Content…","textColor":"the-lightest"} -->
-            <p class="has-the-lightest-color has-text-color">The HTML structure is built using Bootstrap's Grid system
-                alongside a native theme class for vertical structure. This combination of classes allows you to create
-                custom template files or build directly into the Block Editor to achieve the same results.</p>
+            <p class="has-the-lightest-color has-text-color">The HTML structure is built using Bootstrap's Grid system alongside a native theme class for vertical structure. This combination of classes allows you to create custom template files or build directly into the Block Editor to achieve the same results.</p>
             <!-- /wp:paragraph --></div>
         <figure class="wp-block-media-text__media"><img
                     src="http://wpdev.local/wp-content/uploads/2023/03/wst-featured-image-color-6-1024x512.png" alt=""
@@ -60,9 +56,7 @@
             <!-- /wp:heading -->
 
             <!-- wp:paragraph {"placeholder":"Content…","textColor":"the-lightest"} -->
-            <p class="has-the-lightest-color has-text-color">This very page is built in Gutenberg, the WordPress Block
-                Editor. The theme's Page Sections page template includes styles that turn the <strong>Group</strong>
-                block into a full-width page section while keeping the block contents constrained to page-width.</p>
+            <p class="has-the-lightest-color has-text-color">This very page is built in Gutenberg, the WordPress Block Editor. The theme's Page Sections page template includes styles that turn the <strong>Group</strong> block into a full-width page section while keeping the block contents constrained to page-width.</p>
             <!-- /wp:paragraph --></div>
     </div>
     <!-- /wp:media-text --></div>

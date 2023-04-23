@@ -17,8 +17,7 @@
                 <!-- /wp:heading -->
 
                 <!-- wp:paragraph {"align":"center","textColor":"subdued-body"} -->
-                <p class="has-text-align-center has-subdued-body-color has-text-color">This is text inside of one of
-                    three columns. Let's see what we can do here inside of the editor.</p>
+                <p class="has-text-align-center has-subdued-body-color has-text-color">This is text inside of one of three columns. Let's see what we can do here inside the editor.</p>
                 <!-- /wp:paragraph -->
 
                 <!-- wp:buttons {"className":"mt-2","layout":{"type":"flex","justifyContent":"center"},"fontSize":"small"} -->
@@ -41,8 +40,7 @@
                 <!-- /wp:heading -->
 
                 <!-- wp:paragraph {"align":"center","textColor":"subdued-body"} -->
-                <p class="has-text-align-center has-subdued-body-color has-text-color">This is text inside of one of
-                    three columns. Let's see what we can do here inside of the editor.</p>
+                <p class="has-text-align-center has-subdued-body-color has-text-color">This is text inside of one of three columns. Let's see what we can do here inside the editor.</p>
                 <!-- /wp:paragraph -->
 
                 <!-- wp:buttons {"className":"mt-2","layout":{"type":"flex","justifyContent":"center"},"fontSize":"small"} -->
@@ -65,8 +63,7 @@
                 <!-- /wp:heading -->
 
                 <!-- wp:paragraph {"align":"center","textColor":"subdued-body"} -->
-                <p class="has-text-align-center has-subdued-body-color has-text-color">This is text inside of one of
-                    three columns. Let's see what we can do here inside of the editor.</p>
+                <p class="has-text-align-center has-subdued-body-color has-text-color">This is text inside of one of three columns. Let's see what we can do here inside the editor.</p>
                 <!-- /wp:paragraph -->
 
                 <!-- wp:buttons {"className":"mt-2","layout":{"type":"flex","justifyContent":"center"},"fontSize":"small"} -->
