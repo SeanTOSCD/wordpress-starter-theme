@@ -1,7 +1,7 @@
 {
   "name": "WST",
   "version": "1.0.0",
-  "description": "WordPress Starter Theme",
+  "description": "A starter theme for WordPress.",
   "author": "Sean Davis",
   "license": "ISC",
   "devDependencies": {

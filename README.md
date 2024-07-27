@@ -11,9 +11,10 @@ This theme uses [Node.js](https://nodejs.org/en/) and [Grunt](https://gruntjs.co
 1. Install [Node.js](https://nodejs.org/en/) on your machine if you haven't already.
 2. Install and activate the theme in WordPress.
 3. Perform a search and replace for `wst` (lowercase) and `WST` (uppercase) to replace with your own theme slug and prefix.
-4. Run `npm install` in the theme root directory to install dependencies.
-5. Run `grunt watch` to automatically compile Sass, minify CSS and JS while working on the theme styles and scripts.
-6. Run `grunt pot` to update the .pot file.
+4. Manually open the `assets/css/src/style.scss` file and update the theme name, author, and other information as needed.
+5. Run `npm install` in the theme root directory to install dependencies.
+6. Run `grunt watch` to automatically compile Sass, minify CSS and JS while working on the theme styles and scripts.
+7. Run `grunt pot` to update the .pot file.
 
 ## Design Features
 
